@@ -1,13 +1,13 @@
 //
-//  MIBezierView.h
-//  MIBezierView
+//  LSSBezierView.h
+//  LSSBezierView
 //
-//  Created by maia on 16/5/5.
-//  Copyright © 2016年 Maia. All rights reserved.
+//  Created by LuShanshan on 16/5/5.
+//  Copyright © 2016年 LuShanshan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "MIDataModel.h"
+#import "LSSDataModel.h"
 
 typedef enum : NSUInteger {
     MINUTEH,
@@ -18,7 +18,7 @@ typedef enum : NSUInteger {
     MINUTE
 } GroupType;
 
-@interface MIBezierView : UIView
+@interface LSSBezierView : UIView
 {
     UIView *mainboxView; // k线图控件
     CGContextRef context;

@@ -1,28 +1,28 @@
 //
-//  MILineView.h
-//  MIBezierView
+//  LSSLineView.h
+//  LSSBezierView
 //
-//  Created by maia on 16/5/6.
-//  Copyright © 2016年 Maia. All rights reserved.
+//  Created by LuShanshan on 16/5/6.
+//  Copyright © 2016年 LuShanshan. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "MIBezierView.h"
-#import "MIHistogramView.h"
-@protocol MILineViewDelegate <NSObject>
+#import "LSSBezierView.h"
+#import "LSSHistogramView.h"
+@protocol LSSLineViewDelegate <NSObject>
 
 -(void)moveViewWithLOrR:(BOOL)isLeft Count:(int)count;
 
 -(void)scaleViewWithDOrX:(BOOL)isDa;
 
--(void)valuesLbWithModel:(MIDataModel*)model;
+-(void)valuesLbWithModel:(LSSDataModel*)model;
 
 @end
 
-@interface MILineView : UIView
+@interface LSSLineView : UIView
 {
-    MIHistogramView * histogramView;
-    MIBezierView * kLineView;
+    LSSHistogramView * histogramView;
+    LSSBezierView * kLineView;
     UIPinchGestureRecognizer *pinchGesture;
     CGPoint touchViewPoint;
     NSMutableArray * maxArr;
@@ -42,7 +42,7 @@
 
 }
 @property (nonatomic,strong) NSMutableArray *points; // 多点连线数组
-@property(nonatomic,strong)id<MILineViewDelegate> delegate;
+@property(nonatomic,strong)id<LSSLineViewDelegate> delegate;
 /**
  *  是否可以拖拽
  */

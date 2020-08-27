@@ -2,12 +2,12 @@
 //  TabButtonView.h
 //  STLPro
 //
-//  Created by maia on 16/5/10.
+//  Created by LuShanshan on 16/5/10.
 //  Copyright © 2016年 XMYStudio. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "MIBezierView.h"
+#import "LSSBezierView.h"
 
 @protocol TabButtonViewDelegate <NSObject>
 

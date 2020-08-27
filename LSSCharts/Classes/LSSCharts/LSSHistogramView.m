@@ -1,14 +1,14 @@
 //
-//  MIHistogramView.m
+//  LSSHistogramView.m
 //  STLPro
 //
-//  Created by maia on 16/5/11.
+//  Created by LuShanshan on 16/5/11.
 //  Copyright © 2016年 XMYStudio. All rights reserved.
 //
 
-#import "MIHistogramView.h"
-#import "MIDataModel.h"
-@implementation MIHistogramView
+#import "LSSHistogramView.h"
+#import "LSSDataModel.h"
+@implementation LSSHistogramView
 
 -(void)drawRect:(CGRect)rect{
     CGContextRef  contexts = UIGraphicsGetCurrentContext();
@@ -39,7 +39,7 @@
 -(void)initViews{
     CGFloat spese = [self lineWidths:self.points];
     NSMutableArray * mutarr1 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr1 addObject:[NSString stringWithFormat:@"%f",[model.xl floatValue]]];
     }
     
@@ -53,7 +53,7 @@
         [self addSubview:lb];
     }
     for (int i = 0;i<arr1.count;i++) {
-        MIDataModel * model = [self.points objectAtIndex:i];
+        LSSDataModel * model = [self.points objectAtIndex:i];
         CGPoint  currentPoint=CGPointFromString([arr1 objectAtIndex:i]);
         
         UILabel * lineLb = [[UILabel alloc]initWithFrame:CGRectMake(currentPoint.x-spese/2, currentPoint.y, spese, self.frame.size.height - currentPoint.y)];
@@ -80,7 +80,7 @@
     
     NSMutableArray * mutmax = [[NSMutableArray alloc]init];
     
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutmax addObject:[NSString stringWithFormat:@"%f",[model.xl floatValue]]];
     }
     

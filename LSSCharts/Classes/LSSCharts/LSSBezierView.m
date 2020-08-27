@@ -1,15 +1,15 @@
 //
-//  MIBezierView.m
-//  MIBezierView
+//  LSSBezierView.m
+//  LSSBezierView
 //
-//  Created by maia on 16/5/5.
-//  Copyright © 2016年 Maia. All rights reserved.
+//  Created by LuShanshan on 16/5/5.
+//  Copyright © 2016年 LuShanshan. All rights reserved.
 //
 
-#import "MIBezierView.h"
+#import "LSSBezierView.h"
 #define ponty 200
 
-@implementation MIBezierView
+@implementation LSSBezierView
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -72,19 +72,19 @@
 }
 -(void)line{
     NSMutableArray * mutarr1 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr1 addObject:[NSString stringWithFormat:@"%@",model.zgj]];
     }
     NSMutableArray * mutarr2 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr2 addObject:[NSString stringWithFormat:@"%@",model.zdj]];
     }
     NSMutableArray * mutarr3 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr3 addObject:[NSString stringWithFormat:@"%@",model.jksj]];
     }
     NSMutableArray * mutarr4 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr4 addObject:[NSString stringWithFormat:@"%@",model.zspj]];
     }
 
@@ -95,7 +95,7 @@
 
     
     for (int i = 0;i<arr1.count;i++) {
-        MIDataModel * model = [self.points objectAtIndex:i];
+        LSSDataModel * model = [self.points objectAtIndex:i];
         CGPoint  currentPoint=CGPointFromString([arr1 objectAtIndex:i]);
         CGPoint previousPoint =CGPointFromString([arr2 objectAtIndex:i]);
 
@@ -111,7 +111,7 @@
     }
     CGFloat xwide= [self lineWidths:arr1];
     for (int i = 0;i<mutarr2.count;i++) {
-        MIDataModel * model = [self.points objectAtIndex:i];
+        LSSDataModel * model = [self.points objectAtIndex:i];
         
         CGPoint  currentPoint=CGPointFromString([arr3 objectAtIndex:i]);
         CGPoint previousPoint =CGPointFromString([arr4 objectAtIndex:i]);
@@ -140,7 +140,7 @@
 }
 
 /*    NSMutableArray * mut = [[NSMutableArray alloc]init];
-for (MIDataModel * model in self.points) {
+for (LSSDataModel * model in self.points) {
     [mut addObject:[NSString stringWithFormat:@"%f",model.maxValue]];
 }*/
 
@@ -149,7 +149,7 @@ for (MIDataModel * model in self.points) {
 
     NSMutableArray * mutmax = [[NSMutableArray alloc]init];
 
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zdj]];
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zgj]];
         
@@ -173,7 +173,7 @@ for (MIDataModel * model in self.points) {
     
     NSMutableArray * mutmax = [[NSMutableArray alloc]init];
     
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zdj]];
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zgj]];
         
@@ -197,7 +197,7 @@ for (MIDataModel * model in self.points) {
 -(void)getPoint{
     
     NSMutableArray * arr = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [arr addObject:[NSString stringWithFormat:@"%@",model.jksj]];
         
     }

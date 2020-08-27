@@ -1,14 +1,14 @@
 //
-//  MIDataModel.h
-//  MIBezierView
+//  LSSDataModel.h
+//  LSSBezierView
 //
-//  Created by maia on 16/5/5.
-//  Copyright © 2016年 Maia. All rights reserved.
+//  Created by LuShanshan on 16/5/5.
+//  Copyright © 2016年 LuShanshan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface MIDataModel : NSObject
+@interface LSSDataModel : NSObject
 @property (nonatomic,strong) NSString * code;//代码
 @property (nonatomic,strong) NSString * name;//名称
 @property (nonatomic,strong) NSString * isClick;//是否可以点击.

@@ -8,149 +8,151 @@
 
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E889FB33840DADA9D378102663B7D33 /* MILineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 575A02DBB7D6E9C40CEEBD3B353AD9AD /* MILineView.m */; };
+		00C3424A71F901BFED0BA604A8DB27C8 /* TabButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ED85E0A25F532C6E91673E80D90A31D /* TabButtonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C2378B3A455CAE7B004A8B93349FEE1 /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C1A9687961972A342064BC4D42962B /* UIImage+Utilities.m */; };
+		0F2D2DC362F3002A16D04D0A669F38DE /* LSSDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A20C4D4267A6165F18950D7587FD19CA /* LSSDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
-		2984640B7C13C18FF469EB84A62D978E /* UINavigationController+Autorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 603D4600D56A426FA5D6E2C1038D359E /* UINavigationController+Autorotate.m */; };
+		2A9696F60495B9D651238FB5416D46DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		2E275200B6A6CC1EB120830DC9881AB4 /* MILineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 47667F996D6CC8A142FA5948FFF81495 /* MILineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EA8D84F2DBAB4635CEEB190F3803B08 /* UIImage+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A4A0FA7AEDF60B6A3C8D67318577E2E2 /* UIImage+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CE10E3F38F891165AD0F4248BD6343 /* LSSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8291BE3F0EE9F61FB96D86BD0CD8B8D1 /* LSSLineView.m */; };
 		360781B30223DE9590BC297CD2A4D6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		400645F49644B9F6FCBFA61848D29196 /* MIHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E14FD376FCE43F4387F8E2E80B8A4A3 /* MIHistogramView.m */; };
-		4374183406D62427BE63C4DA6E02A00B /* TabButtonView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9C043F85EC7820118772E8D2942943 /* TabButtonView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4543968B24F78F8F00DDD2CD /* LSSCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4543968A24F78F8F00DDD2CD /* LSSCharts.h */; };
 		4BDD6CC92F999109EC6A5DD0368DD838 /* Pods-LSSCharts_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60259CC10E2E367EDD6DAF109B1210F9 /* Pods-LSSCharts_Example-dummy.m */; };
+		522BB6B17C99CD2C2AF9F3D684AD4820 /* LSSBezierView.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6A43F172ED0C0A07D3600C8B3B71DD /* LSSBezierView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56B6230B1C3F4CB2D4B5E06BED780A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
-		5F57D6242D303FAF91F1F354073D6DF3 /* UINavigationController+Autorotate.h in Headers */ = {isa = PBXBuildFile; fileRef = FEFBA6BB37A1D6A9EC87221A1EA1C677 /* UINavigationController+Autorotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6497EA38A20F3FF70947513C6C6312A1 /* LSSHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B66F0CA5F2E0354A78780E740D09D8 /* LSSHistogramView.m */; };
+		65CC673191817BB65EC63D3024CC39F4 /* UINavigationController+Autorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 522ECFB5E0041F6510B6E94738D9D2EA /* UINavigationController+Autorotate.m */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		747112AC56541F07A1C84F3FEA6D65B2 /* Pods-LSSCharts_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF5B97BA5682EBCFC6642752D7E69CC /* Pods-LSSCharts_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3FB9280108A6E64DE275283A5A3CA6 /* Pods-LSSCharts_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E434A59DD5BC1F5A1C156F1C1D419B3D /* Pods-LSSCharts_Tests-dummy.m */; };
+		7DA5C1C9B78127C28A40C0FBE1D83F30 /* LSSBezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8050492D8A9F0C1C28004071742D9B /* LSSBezierView.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90B5EB73C34EE97D8CB105954EC6B3CA /* TabButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C510FCBA9972BE06FC58001EDEF08C0 /* TabButtonView.m */; };
-		9690914C9CB77E5846A673AFBA28A4C5 /* MIHistogramView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F3F8FCB66CF268DF134C313A8DBE28 /* MIHistogramView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9500F42A9E0B07230EB0D36D7F0EE598 /* LSSDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6452802D7EA388306DC6AA2BBFFB6465 /* LSSDataModel.m */; };
 		973EBD09181E33462B967E6FA51CD76B /* Pods-LSSCharts_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D0EF32E31D0C8329886F4843530FE8 /* Pods-LSSCharts_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
-		A0CC9A4051D3ED541C9BEA5C7A4C62C9 /* LSSCharts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3D857C9B5B90A4A24503EF0F4A1749E /* LSSCharts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
-		AC598696C2F13260EA19A40BBE198DC6 /* MIBezierView.h in Headers */ = {isa = PBXBuildFile; fileRef = B2561ECDD329FD783070CFED985AB332 /* MIBezierView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0C3B5C4A37F71EBB1E10582CA85DF9D /* LSSCharts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D72FC6768FB0C2AC523BCA775C4AE37 /* LSSCharts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		B9718A83D4171C1579FD8E26FCE68E52 /* UIImage+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFE95142773B0A3BA32B594939CB0AE /* UIImage+Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C418CA312426C7721B5677904832475B /* MIDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 16681AC9DEADF61ABE6FF845D5F17C54 /* MIDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBA061C70AAF642DAAAFF28A4006DD56 /* MIBezierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 595670DF67FE695883B524C0366357FB /* MIBezierView.m */; };
+		CEEB594210CD88B3E7B9A90AF1574044 /* UINavigationController+Autorotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 43DAB0B48C4351275677BADB33E522E8 /* UINavigationController+Autorotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		DDB53D40D2FAD27276B6D037D3B851DB /* MIDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5C22BA6C8206CFA112717E1B0D1537 /* MIDataModel.m */; };
+		D36329E48C9B02AD8C303EECC6321720 /* LSSHistogramView.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B8E1FEB471945D8B00B640C1965E9E /* LSSHistogramView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0B8D095C732352C854D365B9E5B993D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */; };
+		E0BCA2E431C860D325C3100BF4D0820B /* TabButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01783DDF60065EBC34F7F909D00BD546 /* TabButtonView.m */; };
+		E37E5F425B26CCDBE7AD2CA43C453E44 /* LSSCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BBBCB2FBFC80696F659D536FD25181 /* LSSCharts-dummy.m */; };
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
-		F0565FEC813A86BE06A9B43B94DB2B68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
+		EC372CEC44277BFE8DED370B82F90440 /* LSSLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5541335293114A59CB3E73E90B6BAF /* LSSLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F5294F22F484F1C9420459ED38EE0495 /* LSSCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C654FF4983CB07F6C9488314E8218C2 /* LSSCharts-dummy.m */; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F884CF2A22E3CF7C524527F64AD87021 /* UIImage+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6485216CAB4D15785FE4E2886CF7E1CE /* UIImage+Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		304F2CE13F84FD064373265A588062B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 34EFFBD117A1B7EE07822939FD4FD949;
-			remoteInfo = LSSCharts;
-		};
-		74441D706F5F1EF77C615B24B26BABAA /* PBXContainerItemProxy */ = {
+		25E2DCB5210D7DD2D1AB994895F09D60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		B492B83CD1804C5360008D22A90D6650 /* PBXContainerItemProxy */ = {
+		95912773CCD89AA9EE69AD1F3CFA7219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A7B92B9C0CB6F51B05529533677FF88A;
 			remoteInfo = "Pods-LSSCharts_Example";
 		};
+		C3DAF1ED9E330966474A45A2EFD82C82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34EFFBD117A1B7EE07822939FD4FD949;
+			remoteInfo = LSSCharts;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011D0E1257D0ABAD553639D0D4AB5282 /* LSSCharts.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LSSCharts.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		01783DDF60065EBC34F7F909D00BD546 /* TabButtonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TabButtonView.m; path = LSSCharts/Classes/LSSCharts/TabButtonView.m; sourceTree = "<group>"; };
+		07BBBCB2FBFC80696F659D536FD25181 /* LSSCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSSCharts-dummy.m"; sourceTree = "<group>"; };
+		08B7369E937E6F5B4818CD7E0A7A96F9 /* LSSCharts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LSSCharts-Info.plist"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		16681AC9DEADF61ABE6FF845D5F17C54 /* MIDataModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MIDataModel.h; sourceTree = "<group>"; };
+		15091A7D10909C680E384E1793DF2F52 /* LSSCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSSCharts.debug.xcconfig; sourceTree = "<group>"; };
 		1824247044BE698F7B14402000E7A5D4 /* Pods_LSSCharts_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSSCharts_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19F3F8FCB66CF268DF134C313A8DBE28 /* MIHistogramView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MIHistogramView.h; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		294BD8F03E5C3E4FA0BC8A88D54CADC0 /* Pods-LSSCharts_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSSCharts_Example-frameworks.sh"; sourceTree = "<group>"; };
+		2D8050492D8A9F0C1C28004071742D9B /* LSSBezierView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSBezierView.m; path = LSSCharts/Classes/LSSCharts/LSSBezierView.m; sourceTree = "<group>"; };
 		38BAE4E2A9CD7E99E8A8D87AFB76DD0A /* Pods-LSSCharts_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSSCharts_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3CC76715BD62DEAAA986432AE63253EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3E14FD376FCE43F4387F8E2E80B8A4A3 /* MIHistogramView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MIHistogramView.m; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		40B0231BE8215A20B7D28CF2C53D5A1E /* LSSCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSSCharts-prefix.pch"; sourceTree = "<group>"; };
+		43DAB0B48C4351275677BADB33E522E8 /* UINavigationController+Autorotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Autorotate.h"; path = "LSSCharts/Classes/LSSCharts/UINavigationController+Autorotate.h"; sourceTree = "<group>"; };
+		4543968A24F78F8F00DDD2CD /* LSSCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSSCharts.h; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		47667F996D6CC8A142FA5948FFF81495 /* MILineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MILineView.h; sourceTree = "<group>"; };
 		4B879A004A58DBEE255BF04A793ECC9F /* Pods-LSSCharts_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LSSCharts_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		521E812C1D7FD0BA4D254937188A6A0E /* Pods-LSSCharts_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSSCharts_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		522ECFB5E0041F6510B6E94738D9D2EA /* UINavigationController+Autorotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Autorotate.m"; path = "LSSCharts/Classes/LSSCharts/UINavigationController+Autorotate.m"; sourceTree = "<group>"; };
 		542CB7928F2C4F5624CDA1E4AD62495C /* Pods-LSSCharts_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSSCharts_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		54B66F0CA5F2E0354A78780E740D09D8 /* LSSHistogramView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSHistogramView.m; path = LSSCharts/Classes/LSSCharts/LSSHistogramView.m; sourceTree = "<group>"; };
 		5531744A7790D7B4EA775B5B1DFAF289 /* LSSCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LSSCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		575A02DBB7D6E9C40CEEBD3B353AD9AD /* MILineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MILineView.m; sourceTree = "<group>"; };
-		595670DF67FE695883B524C0366357FB /* MIBezierView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MIBezierView.m; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5F5C22BA6C8206CFA112717E1B0D1537 /* MIDataModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MIDataModel.m; sourceTree = "<group>"; };
 		60259CC10E2E367EDD6DAF109B1210F9 /* Pods-LSSCharts_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LSSCharts_Example-dummy.m"; sourceTree = "<group>"; };
-		603D4600D56A426FA5D6E2C1038D359E /* UINavigationController+Autorotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Autorotate.m"; sourceTree = "<group>"; };
-		6485216CAB4D15785FE4E2886CF7E1CE /* UIImage+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utilities.m"; sourceTree = "<group>"; };
+		62C1A9687961972A342064BC4D42962B /* UIImage+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utilities.m"; path = "LSSCharts/Classes/LSSCharts/UIImage+Utilities.m"; sourceTree = "<group>"; };
+		6452802D7EA388306DC6AA2BBFFB6465 /* LSSDataModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSDataModel.m; path = LSSCharts/Classes/LSSCharts/LSSDataModel.m; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		76C8624061369646F21705F6D09CC73D /* Pods_LSSCharts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSSCharts_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC457F85A6C70EBCABE36E84A423B8F /* Pods-LSSCharts_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSSCharts_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7C654FF4983CB07F6C9488314E8218C2 /* LSSCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSSCharts-dummy.m"; sourceTree = "<group>"; };
+		7D5541335293114A59CB3E73E90B6BAF /* LSSLineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSLineView.h; path = LSSCharts/Classes/LSSCharts/LSSLineView.h; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		85D673DD9D981D0ED42186B1A93BC68D /* LSSCharts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LSSCharts.modulemap; sourceTree = "<group>"; };
+		8291BE3F0EE9F61FB96D86BD0CD8B8D1 /* LSSLineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSLineView.m; path = LSSCharts/Classes/LSSCharts/LSSLineView.m; sourceTree = "<group>"; };
+		83A445D79D119112C7E17F23EB577C87 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		86B8E1FEB471945D8B00B640C1965E9E /* LSSHistogramView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSHistogramView.h; path = LSSCharts/Classes/LSSCharts/LSSHistogramView.h; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		8EFE95142773B0A3BA32B594939CB0AE /* UIImage+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utilities.h"; sourceTree = "<group>"; };
+		8ED85E0A25F532C6E91673E80D90A31D /* TabButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TabButtonView.h; path = LSSCharts/Classes/LSSCharts/TabButtonView.h; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9C510FCBA9972BE06FC58001EDEF08C0 /* TabButtonView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TabButtonView.m; sourceTree = "<group>"; };
-		9C9C043F85EC7820118772E8D2942943 /* TabButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TabButtonView.h; sourceTree = "<group>"; };
+		9D72FC6768FB0C2AC523BCA775C4AE37 /* LSSCharts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSSCharts-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3D857C9B5B90A4A24503EF0F4A1749E /* LSSCharts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSSCharts-umbrella.h"; sourceTree = "<group>"; };
-		A730BF8DA26BB03BAD8CD7BA12ED6B04 /* LSSCharts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LSSCharts-Info.plist"; sourceTree = "<group>"; };
+		A0FE656FFB639D3281494E8BFEAA06D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A20C4D4267A6165F18950D7587FD19CA /* LSSDataModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSDataModel.h; path = LSSCharts/Classes/LSSCharts/LSSDataModel.h; sourceTree = "<group>"; };
+		A2E8A55A4E03EAC35C0540C9FC524B8C /* LSSCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSSCharts.release.xcconfig; sourceTree = "<group>"; };
+		A4A0FA7AEDF60B6A3C8D67318577E2E2 /* UIImage+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Utilities.h"; path = "LSSCharts/Classes/LSSCharts/UIImage+Utilities.h"; sourceTree = "<group>"; };
 		A9D0EF32E31D0C8329886F4843530FE8 /* Pods-LSSCharts_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LSSCharts_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		B2561ECDD329FD783070CFED985AB332 /* MIBezierView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MIBezierView.h; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B742AC6592546D6A1FF9F6F391279957 /* Pods-LSSCharts_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LSSCharts_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C5D32C505065C8DD994FB38BEC77C384 /* Pods-LSSCharts_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSSCharts_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C7B64983B4CCC936741293B54D84B859 /* Pods-LSSCharts_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSSCharts_Example-Info.plist"; sourceTree = "<group>"; };
-		CAA7EE2EB14A3E3B26EBF01BDDCABDEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C926F36799E386FE63C29BFB95307ED0 /* LSSCharts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LSSCharts.modulemap; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		CC52FEF9B6AC3141A092122E154A1D56 /* LSSCharts.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LSSCharts.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CF4BAC123A1A3212DF6E8E7344BDAE76 /* Pods-LSSCharts_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSSCharts_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D0E2498E16ED7EA48DEFBD9FA3524C0C /* Pods-LSSCharts_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSSCharts_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		E123DC97EFF824F7932947B22F260C76 /* LSSCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSSCharts.debug.xcconfig; sourceTree = "<group>"; };
-		E1245DA829239CEAC28A78EDE5FFA9E7 /* LSSCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSSCharts.release.xcconfig; sourceTree = "<group>"; };
 		E434A59DD5BC1F5A1C156F1C1D419B3D /* Pods-LSSCharts_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LSSCharts_Tests-dummy.m"; sourceTree = "<group>"; };
-		E442A067A2185E0515F10D762645D51A /* LSSCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSSCharts-prefix.pch"; sourceTree = "<group>"; };
 		E54EA11A6955277605BCF6EDB1B7D87C /* Pods-LSSCharts_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSSCharts_Tests-Info.plist"; sourceTree = "<group>"; };
+		EA6A43F172ED0C0A07D3600C8B3B71DD /* LSSBezierView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSBezierView.h; path = LSSCharts/Classes/LSSCharts/LSSBezierView.h; sourceTree = "<group>"; };
 		F615A1D78C7B69640B41968330EA3A10 /* Pods-LSSCharts_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LSSCharts_Tests.modulemap"; sourceTree = "<group>"; };
 		F9B8EEE53BBA6B2688C5F14260F1419C /* Pods-LSSCharts_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LSSCharts_Example.modulemap"; sourceTree = "<group>"; };
 		FCF5B97BA5682EBCFC6642752D7E69CC /* Pods-LSSCharts_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LSSCharts_Example-umbrella.h"; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		FEFBA6BB37A1D6A9EC87221A1EA1C677 /* UINavigationController+Autorotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Autorotate.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,14 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				56B6230B1C3F4CB2D4B5E06BED780A3C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		990F29368FB6BD16A43AAD0495D764D0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0565FEC813A86BE06A9B43B94DB2B68 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,24 +183,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAB86FD9E8A05C9CD69C34D5D9BAB1E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9696F60495B9D651238FB5416D46DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		231F3A432E552E9D88F22C6BD290435C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				85D673DD9D981D0ED42186B1A93BC68D /* LSSCharts.modulemap */,
-				7C654FF4983CB07F6C9488314E8218C2 /* LSSCharts-dummy.m */,
-				A730BF8DA26BB03BAD8CD7BA12ED6B04 /* LSSCharts-Info.plist */,
-				E442A067A2185E0515F10D762645D51A /* LSSCharts-prefix.pch */,
-				A3D857C9B5B90A4A24503EF0F4A1749E /* LSSCharts-umbrella.h */,
-				E123DC97EFF824F7932947B22F260C76 /* LSSCharts.debug.xcconfig */,
-				E1245DA829239CEAC28A78EDE5FFA9E7 /* LSSCharts.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LSSCharts";
-			sourceTree = "<group>";
-		};
 		236D153A6ABDEA009D7DC8ADC366FF8D /* Pods-LSSCharts_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +209,21 @@
 			);
 			name = "Pods-LSSCharts_Example";
 			path = "Target Support Files/Pods-LSSCharts_Example";
+			sourceTree = "<group>";
+		};
+		468613BCDAADC74A4829331ABFA11EF3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C926F36799E386FE63C29BFB95307ED0 /* LSSCharts.modulemap */,
+				07BBBCB2FBFC80696F659D536FD25181 /* LSSCharts-dummy.m */,
+				08B7369E937E6F5B4818CD7E0A7A96F9 /* LSSCharts-Info.plist */,
+				40B0231BE8215A20B7D28CF2C53D5A1E /* LSSCharts-prefix.pch */,
+				9D72FC6768FB0C2AC523BCA775C4AE37 /* LSSCharts-umbrella.h */,
+				15091A7D10909C680E384E1793DF2F52 /* LSSCharts.debug.xcconfig */,
+				A2E8A55A4E03EAC35C0540C9FC524B8C /* LSSCharts.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LSSCharts";
 			sourceTree = "<group>";
 		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
@@ -245,20 +247,26 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		6128D1B7A25B73C458A37C55910F6C19 /* Development Pods */ = {
+		748BA3B89712AA766C22A0A9371A17D9 /* LSSCharts */ = {
 			isa = PBXGroup;
 			children = (
-				7A0697934429E425F7988360DFD6F6E2 /* LSSCharts */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		7A0697934429E425F7988360DFD6F6E2 /* LSSCharts */ = {
-			isa = PBXGroup;
-			children = (
-				DB12C4160A86F031BD38090D11F2E4CC /* LSSCharts */,
-				88B46AC88D2C83EE07FC0BF8E3BF928E /* Pod */,
-				231F3A432E552E9D88F22C6BD290435C /* Support Files */,
+				EA6A43F172ED0C0A07D3600C8B3B71DD /* LSSBezierView.h */,
+				2D8050492D8A9F0C1C28004071742D9B /* LSSBezierView.m */,
+				A20C4D4267A6165F18950D7587FD19CA /* LSSDataModel.h */,
+				6452802D7EA388306DC6AA2BBFFB6465 /* LSSDataModel.m */,
+				86B8E1FEB471945D8B00B640C1965E9E /* LSSHistogramView.h */,
+				54B66F0CA5F2E0354A78780E740D09D8 /* LSSHistogramView.m */,
+				7D5541335293114A59CB3E73E90B6BAF /* LSSLineView.h */,
+				8291BE3F0EE9F61FB96D86BD0CD8B8D1 /* LSSLineView.m */,
+				8ED85E0A25F532C6E91673E80D90A31D /* TabButtonView.h */,
+				01783DDF60065EBC34F7F909D00BD546 /* TabButtonView.m */,
+				A4A0FA7AEDF60B6A3C8D67318577E2E2 /* UIImage+Utilities.h */,
+				62C1A9687961972A342064BC4D42962B /* UIImage+Utilities.m */,
+				43DAB0B48C4351275677BADB33E522E8 /* UINavigationController+Autorotate.h */,
+				522ECFB5E0041F6510B6E94738D9D2EA /* UINavigationController+Autorotate.m */,
+				4543968A24F78F8F00DDD2CD /* LSSCharts.h */,
+				CFF21554D0906F9128F07C10C6A73228 /* Pod */,
+				468613BCDAADC74A4829331ABFA11EF3 /* Support Files */,
 			);
 			name = LSSCharts;
 			path = ../..;
@@ -273,16 +281,6 @@
 				5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		88B46AC88D2C83EE07FC0BF8E3BF928E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CAA7EE2EB14A3E3B26EBF01BDDCABDEE /* LICENSE */,
-				CC52FEF9B6AC3141A092122E154A1D56 /* LSSCharts.podspec */,
-				3CC76715BD62DEAAA986432AE63253EF /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		8B32A0828EB2C0275741C2E34C6D85CC /* Pods-LSSCharts_Tests */ = {
@@ -347,7 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				6128D1B7A25B73C458A37C55910F6C19 /* Development Pods */,
+				F848FA1B350356C5CB682C480F207C90 /* Development Pods */,
 				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				E22D8369DC97E79027D4981DC73F1A94 /* Products */,
@@ -355,26 +353,14 @@
 			);
 			sourceTree = "<group>";
 		};
-		DB12C4160A86F031BD38090D11F2E4CC /* LSSCharts */ = {
+		CFF21554D0906F9128F07C10C6A73228 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				B2561ECDD329FD783070CFED985AB332 /* MIBezierView.h */,
-				595670DF67FE695883B524C0366357FB /* MIBezierView.m */,
-				16681AC9DEADF61ABE6FF845D5F17C54 /* MIDataModel.h */,
-				5F5C22BA6C8206CFA112717E1B0D1537 /* MIDataModel.m */,
-				19F3F8FCB66CF268DF134C313A8DBE28 /* MIHistogramView.h */,
-				3E14FD376FCE43F4387F8E2E80B8A4A3 /* MIHistogramView.m */,
-				47667F996D6CC8A142FA5948FFF81495 /* MILineView.h */,
-				575A02DBB7D6E9C40CEEBD3B353AD9AD /* MILineView.m */,
-				9C9C043F85EC7820118772E8D2942943 /* TabButtonView.h */,
-				9C510FCBA9972BE06FC58001EDEF08C0 /* TabButtonView.m */,
-				8EFE95142773B0A3BA32B594939CB0AE /* UIImage+Utilities.h */,
-				6485216CAB4D15785FE4E2886CF7E1CE /* UIImage+Utilities.m */,
-				FEFBA6BB37A1D6A9EC87221A1EA1C677 /* UINavigationController+Autorotate.h */,
-				603D4600D56A426FA5D6E2C1038D359E /* UINavigationController+Autorotate.m */,
+				A0FE656FFB639D3281494E8BFEAA06D3 /* LICENSE */,
+				011D0E1257D0ABAD553639D0D4AB5282 /* LSSCharts.podspec */,
+				83A445D79D119112C7E17F23EB577C87 /* README.md */,
 			);
-			name = LSSCharts;
-			path = LSSCharts/Classes/LSSCharts;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		E15FC18EA25F0608F5DE90CF13FC83B1 /* Targets Support Files */ = {
@@ -405,6 +391,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F848FA1B350356C5CB682C480F207C90 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748BA3B89712AA766C22A0A9371A17D9 /* LSSCharts */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -431,18 +425,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		904FECF34BC2F7E36E6F6F66E0854E39 /* Headers */ = {
+		937561C835CB99AE943DCB1396A08864 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CC9A4051D3ED541C9BEA5C7A4C62C9 /* LSSCharts-umbrella.h in Headers */,
-				AC598696C2F13260EA19A40BBE198DC6 /* MIBezierView.h in Headers */,
-				C418CA312426C7721B5677904832475B /* MIDataModel.h in Headers */,
-				9690914C9CB77E5846A673AFBA28A4C5 /* MIHistogramView.h in Headers */,
-				2E275200B6A6CC1EB120830DC9881AB4 /* MILineView.h in Headers */,
-				4374183406D62427BE63C4DA6E02A00B /* TabButtonView.h in Headers */,
-				B9718A83D4171C1579FD8E26FCE68E52 /* UIImage+Utilities.h in Headers */,
-				5F57D6242D303FAF91F1F354073D6DF3 /* UINavigationController+Autorotate.h in Headers */,
+				B0C3B5C4A37F71EBB1E10582CA85DF9D /* LSSCharts-umbrella.h in Headers */,
+				522BB6B17C99CD2C2AF9F3D684AD4820 /* LSSBezierView.h in Headers */,
+				0F2D2DC362F3002A16D04D0A669F38DE /* LSSDataModel.h in Headers */,
+				D36329E48C9B02AD8C303EECC6321720 /* LSSHistogramView.h in Headers */,
+				EC372CEC44277BFE8DED370B82F90440 /* LSSLineView.h in Headers */,
+				00C3424A71F901BFED0BA604A8DB27C8 /* TabButtonView.h in Headers */,
+				2EA8D84F2DBAB4635CEEB190F3803B08 /* UIImage+Utilities.h in Headers */,
+				CEEB594210CD88B3E7B9A90AF1574044 /* UINavigationController+Autorotate.h in Headers */,
+				4543968B24F78F8F00DDD2CD /* LSSCharts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,8 +464,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				C03AF4D566B382A5433DF42A35AE2D9B /* PBXTargetDependency */,
-				46E799976DF0940E37D7104BFDB159B3 /* PBXTargetDependency */,
+				5CD76943738AB5744702D83F6B153117 /* PBXTargetDependency */,
+				A9BF70AB943F429C173FFACE7AC3FD0B /* PBXTargetDependency */,
 			);
 			name = "Pods-LSSCharts_Tests";
 			productName = "Pods-LSSCharts_Tests";
@@ -479,12 +474,12 @@
 		};
 		34EFFBD117A1B7EE07822939FD4FD949 /* LSSCharts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1B64B770AEC8AEDABC1F1849AE96F8F /* Build configuration list for PBXNativeTarget "LSSCharts" */;
+			buildConfigurationList = 8704ABB09C27113B8624A864DE30631B /* Build configuration list for PBXNativeTarget "LSSCharts" */;
 			buildPhases = (
-				904FECF34BC2F7E36E6F6F66E0854E39 /* Headers */,
-				3DC77A2C29A8A3BFE4182FF836D1A4AC /* Sources */,
-				990F29368FB6BD16A43AAD0495D764D0 /* Frameworks */,
-				16014F85B38EBEA75FB5A251C531D4D2 /* Resources */,
+				937561C835CB99AE943DCB1396A08864 /* Headers */,
+				9DF1FA21E4D6673E50E68AE7C7234541 /* Sources */,
+				FAB86FD9E8A05C9CD69C34D5D9BAB1E0 /* Frameworks */,
+				B9B63BE1B8D1A6E0D61A2AB3951D586D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -525,7 +520,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				34F9287868F820BD78A7F6DD2D41D34A /* PBXTargetDependency */,
+				FDDCFD46EB1CCB39CDBE2A7F74400150 /* PBXTargetDependency */,
 			);
 			name = "Pods-LSSCharts_Example";
 			productName = "Pods-LSSCharts_Example";
@@ -563,13 +558,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		16014F85B38EBEA75FB5A251C531D4D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3697A0B5D479B14F624CAFEF7A6B3C95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -578,6 +566,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5CC655F1A6C7A45A9693160581076BAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B63BE1B8D1A6E0D61A2AB3951D586D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -602,26 +597,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DC77A2C29A8A3BFE4182FF836D1A4AC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5294F22F484F1C9420459ED38EE0495 /* LSSCharts-dummy.m in Sources */,
-				CBA061C70AAF642DAAAFF28A4006DD56 /* MIBezierView.m in Sources */,
-				DDB53D40D2FAD27276B6D037D3B851DB /* MIDataModel.m in Sources */,
-				400645F49644B9F6FCBFA61848D29196 /* MIHistogramView.m in Sources */,
-				0E889FB33840DADA9D378102663B7D33 /* MILineView.m in Sources */,
-				90B5EB73C34EE97D8CB105954EC6B3CA /* TabButtonView.m in Sources */,
-				F884CF2A22E3CF7C524527F64AD87021 /* UIImage+Utilities.m in Sources */,
-				2984640B7C13C18FF469EB84A62D978E /* UINavigationController+Autorotate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		513A3BF3BE4A2ECEE7EA53F178EA4DE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4BDD6CC92F999109EC6A5DD0368DD838 /* Pods-LSSCharts_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DF1FA21E4D6673E50E68AE7C7234541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E37E5F425B26CCDBE7AD2CA43C453E44 /* LSSCharts-dummy.m in Sources */,
+				7DA5C1C9B78127C28A40C0FBE1D83F30 /* LSSBezierView.m in Sources */,
+				9500F42A9E0B07230EB0D36D7F0EE598 /* LSSDataModel.m in Sources */,
+				6497EA38A20F3FF70947513C6C6312A1 /* LSSHistogramView.m in Sources */,
+				32CE10E3F38F891165AD0F4248BD6343 /* LSSLineView.m in Sources */,
+				E0BCA2E431C860D325C3100BF4D0820B /* TabButtonView.m in Sources */,
+				0C2378B3A455CAE7B004A8B93349FEE1 /* UIImage+Utilities.m in Sources */,
+				65CC673191817BB65EC63D3024CC39F4 /* UINavigationController+Autorotate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,23 +639,23 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		34F9287868F820BD78A7F6DD2D41D34A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LSSCharts;
-			target = 34EFFBD117A1B7EE07822939FD4FD949 /* LSSCharts */;
-			targetProxy = 304F2CE13F84FD064373265A588062B2 /* PBXContainerItemProxy */;
-		};
-		46E799976DF0940E37D7104BFDB159B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-LSSCharts_Example";
-			target = A7B92B9C0CB6F51B05529533677FF88A /* Pods-LSSCharts_Example */;
-			targetProxy = B492B83CD1804C5360008D22A90D6650 /* PBXContainerItemProxy */;
-		};
-		C03AF4D566B382A5433DF42A35AE2D9B /* PBXTargetDependency */ = {
+		5CD76943738AB5744702D83F6B153117 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FBSnapshotTestCase;
 			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 74441D706F5F1EF77C615B24B26BABAA /* PBXContainerItemProxy */;
+			targetProxy = 25E2DCB5210D7DD2D1AB994895F09D60 /* PBXContainerItemProxy */;
+		};
+		A9BF70AB943F429C173FFACE7AC3FD0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LSSCharts_Example";
+			target = A7B92B9C0CB6F51B05529533677FF88A /* Pods-LSSCharts_Example */;
+			targetProxy = 95912773CCD89AA9EE69AD1F3CFA7219 /* PBXContainerItemProxy */;
+		};
+		FDDCFD46EB1CCB39CDBE2A7F74400150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSSCharts;
+			target = 34EFFBD117A1B7EE07822939FD4FD949 /* LSSCharts */;
+			targetProxy = C3DAF1ED9E330966474A45A2EFD82C82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -829,9 +824,9 @@
 			};
 			name = Release;
 		};
-		AD90FD2286F362454F438F1BA16FCE84 /* Debug */ = {
+		5A1200427BE224C7F992F726CD213C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E123DC97EFF824F7932947B22F260C76 /* LSSCharts.debug.xcconfig */;
+			baseConfigurationReference = 15091A7D10909C680E384E1793DF2F52 /* LSSCharts.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -920,6 +915,39 @@
 			};
 			name = Release;
 		};
+		B121E08C0743A3825ED216E3F354FC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E8A55A4E03EAC35C0540C9FC524B8C /* LSSCharts.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSSCharts/LSSCharts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSSCharts/LSSCharts-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LSSCharts/LSSCharts.modulemap";
+				PRODUCT_MODULE_NAME = LSSCharts;
+				PRODUCT_NAME = LSSCharts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BE874B114A0991701B09229EAAA4CA84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
@@ -986,39 +1014,6 @@
 			};
 			name = Debug;
 		};
-		EC9F24D1B331E5D50484BDE626FE2307 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1245DA829239CEAC28A78EDE5FFA9E7 /* LSSCharts.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LSSCharts/LSSCharts-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LSSCharts/LSSCharts-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LSSCharts/LSSCharts.modulemap";
-				PRODUCT_MODULE_NAME = LSSCharts;
-				PRODUCT_NAME = LSSCharts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		FAC98852D6FFAB2ED9E59E1099215942 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 521E812C1D7FD0BA4D254937188A6A0E /* Pods-LSSCharts_Tests.release.xcconfig */;
@@ -1066,6 +1061,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		8704ABB09C27113B8624A864DE30631B /* Build configuration list for PBXNativeTarget "LSSCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1200427BE224C7F992F726CD213C7E /* Debug */,
+				B121E08C0743A3825ED216E3F354FC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1C17AD96CC136D05873015F725F6064 /* Build configuration list for PBXNativeTarget "Pods-LSSCharts_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1089,15 +1093,6 @@
 			buildConfigurations = (
 				DAC2E7D5E5774BA8C87C56EA233E4A3A /* Debug */,
 				4CB4622FF285EBA9785FB8C867D7F0A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D1B64B770AEC8AEDABC1F1849AE96F8F /* Build configuration list for PBXNativeTarget "LSSCharts" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD90FD2286F362454F438F1BA16FCE84 /* Debug */,
-				EC9F24D1B331E5D50484BDE626FE2307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

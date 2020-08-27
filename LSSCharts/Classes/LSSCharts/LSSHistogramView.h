@@ -1,14 +1,14 @@
 //
-//  MIHistogramView.h
+//  LSSHistogramView.h
 //  STLPro
 //
-//  Created by maia on 16/5/11.
+//  Created by LuShanshan on 16/5/11.
 //  Copyright © 2016年 XMYStudio. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MIHistogramView : UIView{
+@interface LSSHistogramView : UIView{
 
     CGFloat max;
     CGFloat min;

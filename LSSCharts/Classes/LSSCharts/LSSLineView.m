@@ -1,14 +1,14 @@
 //
-//  MILineView.m
-//  MIBezierView
+//  LSSLineView.m
+//  LSSBezierView
 //
-//  Created by maia on 16/5/6.
-//  Copyright © 2016年 Maia. All rights reserved.
+//  Created by LuShanshan on 16/5/6.
+//  Copyright © 2016年 LuShanshan. All rights reserved.
 //
 
-#import "MILineView.h"
+#import "LSSLineView.h"
 
-@implementation MILineView
+@implementation LSSLineView
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self == [super initWithFrame:frame]) {
         
@@ -18,7 +18,7 @@
 -(void)drawRect:(CGRect)rect{
     NSMutableArray * mutmax = [[NSMutableArray alloc]init];
     
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zdj]];
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zgj]];
     }
@@ -164,7 +164,7 @@
 -(void)initView{
     NSMutableArray * mutmax = [[NSMutableArray alloc]init];
     
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zdj]];
         [mutmax addObject:[NSString stringWithFormat:@"%@",model.zgj]];
         
@@ -202,7 +202,7 @@
         [Leftimg addSubview:lb];
     }
     if (kLineView == nil) {
-        kLineView  = [[MIBezierView alloc]initWithFrame:CGRectMake(leftW, 0, self.frame.size.width- leftW-40, heght)];
+        kLineView  = [[LSSBezierView alloc]initWithFrame:CGRectMake(leftW, 0, self.frame.size.width- leftW-40, heght)];
         kLineView.backgroundColor = [UIColor clearColor];
         kLineView.points = self.points;
         kLineView.Type = _Type;
@@ -216,7 +216,7 @@
         [longPressGestureRecognizer setAllowableMovement:50.0];
         [self addGestureRecognizer:longPressGestureRecognizer];
         
-        histogramView  = [[MIHistogramView alloc]initWithFrame:CGRectMake(leftW, heght +20, self.frame.size.width- leftW-40, self.frame.size.height - heght - 50)];
+        histogramView  = [[LSSHistogramView alloc]initWithFrame:CGRectMake(leftW, heght +20, self.frame.size.width- leftW-40, self.frame.size.height - heght - 50)];
         histogramView.backgroundColor = [UIColor clearColor];
         histogramView.points = self.points;
         histogramView.layer.masksToBounds = YES;
@@ -230,15 +230,15 @@
     }
 
     NSMutableArray * mutarr1 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr1 addObject:[NSString stringWithFormat:@"%f",[model.jksj floatValue]]];
     }
     NSMutableArray * mutarr2 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr2 addObject:[NSString stringWithFormat:@"%f",[model.zspj floatValue]]];
     }
     NSMutableArray * mutarr3 = [[NSMutableArray alloc]init];
-    for (MIDataModel * model in self.points) {
+    for (LSSDataModel * model in self.points) {
         [mutarr3 addObject:[NSString stringWithFormat:@"%f",[model.xl floatValue]]];
     }
 
@@ -358,7 +358,7 @@ int s=0;
     
     if (_Type == 0) {
         CGPoint points;
-        MIDataModel * models;
+        LSSDataModel * models;
 
         for (int i = 0; i<kLineView.linePoints.count; i++) {
             CGPoint currentPoint =CGPointFromString( [kLineView.linePoints objectAtIndex:i]);
@@ -367,7 +367,7 @@ int s=0;
                 CGFloat rightX = leftX + 2.5;
                 if (touchViewPoint.x >leftX && touchViewPoint.x <= rightX) {
                     points = currentPoint;
-                    MIDataModel * model = [self.points objectAtIndex:i];
+                    LSSDataModel * model = [self.points objectAtIndex:i];
                     models = model;
 
                 }
@@ -419,27 +419,27 @@ int s=0;
     
     else{
         CGPoint points;
-        MIDataModel * models;
+        LSSDataModel * models;
         for (int i = 0; i<minArr.count; i++) {
             CGPoint currentPoint =CGPointFromString( [minArr objectAtIndex:i]);
             CGFloat leftX = currentPoint.x - [self lineWidths:maxArr]/2;
             CGFloat rightX = leftX+[self lineWidths:maxArr];
             if (touchViewPoint.x >=leftX && touchViewPoint.x <= rightX) {
                 points = currentPoint;
-                MIDataModel * model = [self.points objectAtIndex:i];
+                LSSDataModel * model = [self.points objectAtIndex:i];
                 models = model;
             }
         }
         
         CGPoint pointsHis;
-        MIDataModel * modelsHis;
+        LSSDataModel * modelsHis;
         for (int i = 0; i<volValueArr.count; i++) {
             CGPoint currentPoint =CGPointFromString( [volValueArr objectAtIndex:i]);
             CGFloat leftX = currentPoint.x - [self lineWidths:volValueArr]/2;
             CGFloat rightX = leftX+[self lineWidths:volValueArr];
             if (touchViewPoint.x >=leftX && touchViewPoint.x <= rightX) {
                 pointsHis = currentPoint;
-                MIDataModel * model = [self.points objectAtIndex:i];
+                LSSDataModel * model = [self.points objectAtIndex:i];
                 modelsHis = model;
             }
         }

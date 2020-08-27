@@ -4,7 +4,7 @@
 //  TabButtonView.m
 //  STLPro
 //
-//  Created by maia on 16/5/10.
+//  Created by LuShanshan on 16/5/10.
 //  Copyright © 2016年 XMYStudio. All rights reserved.
 //
 
@@ -134,7 +134,7 @@
         
         backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, LSSScreenWidth, LSSScreenHeight)];
         backView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-        [[UIApplication sharedApplication].keyWindow.viewForBaselineLayout addSubview:backView];
+        [[UIApplication sharedApplication].keyWindow.viewForLastBaselineLayout addSubview:backView];
         UIButton * btn = [[UIButton alloc]initWithFrame:backView.frame];
         
         [btn addTarget:self action:@selector(hideBackView) forControlEvents:UIControlEventTouchUpInside];
