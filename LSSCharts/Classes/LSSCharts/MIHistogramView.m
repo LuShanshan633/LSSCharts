@@ -60,13 +60,13 @@
         lineLb.layer.masksToBounds = YES;
         lineLb.layer.borderWidth = 0.8;
         if (model.jksj > model.zspj) {
-            lineLb.layer.borderColor =ZhuGreenColorAl.CGColor;
-            [lineLb setBackgroundColor:BtnGreenColorAl];
+            lineLb.layer.borderColor =[UIColor greenColor].CGColor;
+            [lineLb setBackgroundColor:[UIColor grayColor]];
             
         }
         else{
-            lineLb.layer.borderColor =ZhuRedColorAl.CGColor;
-            [lineLb setBackgroundColor:BtnRedColorAl];
+            lineLb.layer.borderColor =[UIColor redColor].CGColor;
+            [lineLb setBackgroundColor:[UIColor purpleColor]];
         }
         [self addSubview:lineLb];
     }

@@ -4,7 +4,6 @@ platform :ios, '10.0'
 source 'https://github.com/LuShanshan633/LSSSpecs.git'
 target 'LSSCharts_Example' do
   pod 'LSSCharts', :path => '../'
-
   target 'LSSCharts_Tests' do
     inherit! :search_paths
 

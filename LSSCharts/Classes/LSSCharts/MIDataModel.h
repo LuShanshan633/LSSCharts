@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "JSONModel.h"
 @interface MIDataModel : JSONModel
 @property (nonatomic,strong) NSString<Optional> * code;//代码
 @property (nonatomic,strong) NSString<Optional> * name;//名称

@@ -101,11 +101,11 @@
 
         UILabel * lineLb = [[UILabel alloc]initWithFrame:CGRectMake(currentPoint.x, currentPoint.y, 0.5, previousPoint.y -currentPoint.y)];
         if (model.jksj > model.zspj) {
-            [lineLb setBackgroundColor:LineGreenColor];
+            [lineLb setBackgroundColor:[UIColor greenColor]];
             
         }
         else{
-            [lineLb setBackgroundColor:LineRedCorlor];
+            [lineLb setBackgroundColor:[UIColor redColor]];
         }
         [self addSubview:lineLb];
     }
@@ -126,11 +126,11 @@
         }
 
         if (model.jksj > model.zspj) {
-            [lineLb setBackgroundColor:LineGreenColor];
+            [lineLb setBackgroundColor:[UIColor greenColor]];
 
         }
         else{
-            [lineLb setBackgroundColor:LineRedCorlor];
+            [lineLb setBackgroundColor:[UIColor redColor]];
         }
 
         [self addSubview:lineLb];
@@ -205,7 +205,7 @@ for (MIDataModel * model in self.points) {
     NSMutableArray * arr1 = [self returnLinePoint:arr];
     UIBezierPath* aPath = [UIBezierPath bezierPath];
     aPath.lineWidth = 5.0;
-    UIColor *color = LineBlueBackColor;
+    UIColor *color = [UIColor blueColor];
     [color set];  //
     aPath.lineCapStyle = kCGLineCapRound;  //线条拐角
     aPath.lineJoinStyle = kCGLineCapRound;  //终点处理
@@ -232,7 +232,7 @@ for (MIDataModel * model in self.points) {
 
     for (int i = 0;i<arr1.count;i++) {
         
-        UIColor *color = LineBlueColor;
+        UIColor *color = [UIColor brownColor];
         [color set];  //设置线条颜色
         if (i<arr1.count-1) {
             CGPoint  currentPoint=CGPointFromString([arr1 objectAtIndex:i]);

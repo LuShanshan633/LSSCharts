@@ -10,6 +10,9 @@
 
 #import "TabButtonView.h"
 #import "UIImage+Utilities.h"
+#define LSSScreenWidth [UIScreen mainScreen].bounds.size.width
+#define LSSScreenHeight [UIScreen mainScreen].bounds.size.height
+
 @implementation TabButtonView
 
 -(instancetype)initWithFrame:(CGRect)frame{
@@ -25,11 +28,11 @@
             
             UIButton * selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
             selectBtn.frame = CGRectMake((self.frame.size.width - 30)/10*i, 0, (self.frame.size.width - 30)/10, self.frame.size.height);
-            [selectBtn setTitleColor:HomeOrangeColor forState:UIControlStateSelected];
+            [selectBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
             [selectBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
             [selectBtn setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
             [selectBtn setBackgroundImage:[UIImage imageNamed:@"jiaoyipinxiangqing"] forState:UIControlStateSelected];
-            selectBtn.titleLabel.font = FontWithSize(14);
+            selectBtn.titleLabel.font = [UIFont systemFontOfSize:14];
             
             if (i  == _Type) {
                 selectBtn.selected  =YES;
@@ -85,11 +88,11 @@
             
             UIButton * selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
             selectBtn.frame = CGRectMake((self.frame.size.width - 30)/6*i, 0, (self.frame.size.width - 30)/6, self.frame.size.height);
-            [selectBtn setTitleColor:HomeOrangeColor forState:UIControlStateSelected];
+            [selectBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
             [selectBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
             [selectBtn setBackgroundImage:[UIImage imageWithColor:[UIColor whiteColor]] forState:UIControlStateNormal];
             [selectBtn setBackgroundImage:[UIImage imageNamed:@"jiaoyipinxiangqing"] forState:UIControlStateSelected];
-            selectBtn.titleLabel.font = FontWithSize(14);
+            selectBtn.titleLabel.font = [UIFont systemFontOfSize:14];
             
             if (i  == _Type) {
                 selectBtn.selected  =YES;
@@ -129,7 +132,7 @@
         [lb setBackgroundColor:[UIColor lightGrayColor]];
         [self addSubview:lb];
         
-        backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+        backView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, LSSScreenWidth, LSSScreenHeight)];
         backView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
         [[UIApplication sharedApplication].keyWindow.viewForBaselineLayout addSubview:backView];
         UIButton * btn = [[UIButton alloc]initWithFrame:backView.frame];
@@ -138,7 +141,7 @@
         [backView addSubview:btn];
         for (int i = 0; i < 5; i++) {
             UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-            btn.frame = CGRectMake((self.frame.size.width - 30)/6*5, (64 + 40 + ScreenWidth/3.1)+30*i, (self.frame.size.width - 30)/6, 30);
+            btn.frame = CGRectMake((self.frame.size.width - 30)/6*5, (64 + 40 + LSSScreenWidth/3.1)+30*i, (self.frame.size.width - 30)/6, 30);
             [btn setBackgroundColor:[UIColor whiteColor]];
             [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
             if (i == 0) {
