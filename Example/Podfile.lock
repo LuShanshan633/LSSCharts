@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - LSSCharts (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - LSSCharts (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  LSSCharts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  LSSCharts: 5482dcb7eed0c619315bceec3363d5bffe202c17
+
+PODFILE CHECKSUM: 4e5301c3d7c9561bf9ce60ba4d41103530269ff1
+
+COCOAPODS: 1.9.3
