@@ -33,6 +33,7 @@
     [tabView initWithView];
     [tabView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:tabView];
+   
     [self data];
 
     bezierView = [[LSSLineView alloc]initWithFrame:CGRectMake(0, 110, self.view.frame.size.width, self.view.frame.size.height-110-49-25)];
