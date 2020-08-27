@@ -111,14 +111,14 @@
     movelineoneLable.font = [UIFont fontWithName:@"Arial" size:14];
     movelineoneLable.layer.cornerRadius = 5;
     movelineoneLable.backgroundColor = [UIColor lightGrayColor];
-    movelineoneLable.textColor = [UIColor lightGrayColor];
+    movelineoneLable.textColor = [UIColor redColor];
     movelineoneLable.textAlignment = NSTextAlignmentCenter;
     movelineoneLable.alpha = 1;
     [movelineone addSubview:movelineoneLable];
     movelinetwoLable = [[UILabel alloc] initWithFrame:CGRectMake(-30,-20 ,  60, 20)];
     movelinetwoLable.layer.cornerRadius = 5;
     movelinetwoLable.backgroundColor = [UIColor lightGrayColor];
-    movelinetwoLable.textColor =[UIColor lightGrayColor];
+    movelinetwoLable.textColor =[UIColor redColor];
     movelinetwoLable.textAlignment = NSTextAlignmentCenter;
     movelinetwoLable.alpha = 0.8;
     [movelinetwo addSubview:movelinetwoLable];
@@ -145,7 +145,7 @@
     moveHistogramlineoneLable.font = [UIFont fontWithName:@"Arial" size:14];
     moveHistogramlineoneLable.layer.cornerRadius = 5;
     moveHistogramlineoneLable.backgroundColor = [UIColor lightGrayColor];
-    moveHistogramlineoneLable.textColor = [UIColor lightGrayColor];
+    moveHistogramlineoneLable.textColor = [UIColor redColor];
     moveHistogramlineoneLable.textAlignment = NSTextAlignmentCenter;
     moveHistogramlineoneLable.alpha = 1;
     [moveHistogramlineone addSubview:moveHistogramlineoneLable];

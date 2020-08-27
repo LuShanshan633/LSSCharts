@@ -10,12 +10,12 @@
 #import "LSSDataModel.h"
 
 typedef enum : NSUInteger {
-    MINUTEH,
-    FIVEDAY,
-    DAYK,
-    WEEKK,
-    MONTHK,
-    MINUTE
+    MINUTEH,//分
+    FIVEDAY,//
+    DAYK,//
+    WEEKK,//
+    MONTHK,//
+    MINUTE//
 } GroupType;
 
 @interface LSSBezierView : UIView
