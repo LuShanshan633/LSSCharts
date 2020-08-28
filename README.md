@@ -22,8 +22,7 @@ pod 'LSSCharts'
 
 ## Author
 
-LuShanshan633, gmyuan11@gmail.com
-
+LuShanshan633
 ## License
 
 LSSCharts is available under the MIT license. See the LICENSE file for more info.
