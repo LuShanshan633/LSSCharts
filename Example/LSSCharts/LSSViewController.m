@@ -7,7 +7,7 @@
 //
 
 #import "LSSViewController.h"
-#import <LSSCharts/LSSCharts-umbrella.h>
+#import <LSSCharts/LSSCharts.h>
 
 @interface LSSViewController ()<LSSLineViewDelegate,TabButtonViewDelegate>
 {

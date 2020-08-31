@@ -15,6 +15,15 @@
     }
     return self;
 }
+-(instancetype)initWithConfig:(LSSChartsConfig *)config frame:(CGRect)frame delegate:(id<LSSLineViewDelegate>)delegate{  if (self = [super init]) {
+    self.config = config;
+    self.delegate = delegate;
+    }
+    return self;
+}
+-(void)drawBackLine{
+    
+}
 -(void)drawRect:(CGRect)rect{
     NSMutableArray * mutmax = [[NSMutableArray alloc]init];
     
@@ -133,8 +142,7 @@
 
     
     
-    moveHistogramlineone = [[UIView alloc] initWithFrame:CGRectMake(0,0, 0.5,
-                                                           self.frame.size.height+self.frame.origin.y)];
+    moveHistogramlineone = [[UIView alloc] initWithFrame:CGRectMake(0,0, 0.5,self.frame.size.height+self.frame.origin.y)];
     moveHistogramlineone.backgroundColor = [UIColor blackColor];
     [histogramView addSubview:moveHistogramlineone];
     

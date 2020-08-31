@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSSChartsConfig.h"
+
 #import "LSSBezierView.h"
 #import "LSSHistogramView.h"
 @protocol LSSLineViewDelegate <NSObject>
@@ -50,5 +52,9 @@
 @property (nonatomic,assign) GroupType Type;// 图形类型
 
 -(void)startDroke;
+
+@property (nonatomic,strong) LSSChartsConfig *config;
+-(instancetype)initWithConfig:(LSSChartsConfig *)config frame:(CGRect)frame delegate:(id<LSSLineViewDelegate>)delegate;
+
 @end
 

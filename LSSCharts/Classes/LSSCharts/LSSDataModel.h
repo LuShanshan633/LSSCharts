@@ -20,7 +20,7 @@
 @property (nonatomic,strong) NSString * hqdhl;//行情订货量
 @property (nonatomic,strong) NSString * zd;//涨跌
 
-@property(nonatomic,strong)  NSString *zxj;
+@property(nonatomic,strong)  NSString *zxj;//最新价
 @property (nonatomic,strong) NSString * jsj;//结算价
 @property (nonatomic,strong) NSString * mj_in;//买价
 @property (nonatomic,strong) NSString * mj_out;//卖价
