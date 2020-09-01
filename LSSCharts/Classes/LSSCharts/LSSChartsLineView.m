@@ -24,6 +24,9 @@
         [longPressGestureRecognizer2 setAllowableMovement:50.0];
         [self.volumBackView addGestureRecognizer:longPressGestureRecognizer2];
 
+        UIPinchGestureRecognizer *  pinchGestures = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(touchBoxAction:)];
+        [self.klineBackView addGestureRecognizer:pinchGestures];
+
 
     }
     return self;
@@ -41,6 +44,13 @@
 -(void)drawStroke{
     [self setNeedsLayout];
     if(self.chartsType == LSSLineCharts){
+        for (UIView * v in self.klineBackView.subviews) {
+            [v removeFromSuperview];
+        }
+        for (UIView * v in self.volumBackView.subviews) {
+            [v removeFromSuperview];
+        }
+
         [self getKline];
         [self getVolumLine];
     }
@@ -97,7 +107,7 @@
         CGPoint  currentPoint=CGPointFromString([self.volumMutPointArr objectAtIndex:i]);
         CGFloat  xWidth  = self.zhuWidth - 1;
         UILabel * lineLbZhu = [[UILabel alloc]init];
-        lineLbZhu.frame =CGRectMake(currentPoint.x-xWidth/2.0, currentPoint.y, xWidth, self.frame.size.height - self.config.lineViewHeight - self.config.spaceTop - self.config.spaceBottom - currentPoint.y - 5);
+        lineLbZhu.frame =CGRectMake(currentPoint.x, currentPoint.y, xWidth, self.frame.size.height - self.config.lineViewHeight - self.config.spaceTop - self.config.spaceBottom - currentPoint.y - 5);
 
         if (model.jksj.floatValue > model.zspj.floatValue) {
             [lineLbZhu setBackgroundColor:self.config.kRiseColor];
@@ -114,20 +124,15 @@
 }
 ///K线图
 -(void)getKline{
-    for (UIView * v in self.klineBackView.subviews) {
-        [v removeFromSuperview];
-    }
-    for (UIView * v in self.volumBackView.subviews) {
-        [v removeFromSuperview];
-    }
+    
 
     for (int i = 0;i<self.dataSource.count;i++) {
         LSSDataModel * model = [self.dataSource objectAtIndex:i];
         CGPoint  currentPoint=CGPointFromString([self.zgjMutPointArr objectAtIndex:i]);
         CGPoint previousPoint =CGPointFromString([self.zdjMutPointArr objectAtIndex:i]);
-        CGFloat  xWidth  = self.zhuWidth - 1;
+        CGFloat  xWidth  = self.zhuWidth-1;
 
-        UILabel * lineLb = [[UILabel alloc]initWithFrame:CGRectMake(currentPoint.x + xWidth/2.0, currentPoint.y, 0.5, previousPoint.y -currentPoint.y)];
+        UILabel * lineLb = [[UILabel alloc]initWithFrame:CGRectMake(currentPoint.x+self.zhuWidth/2.0, currentPoint.y, 0.5, previousPoint.y -currentPoint.y)];
         if (model.jksj.floatValue > model.zspj.floatValue) {
             [lineLb setBackgroundColor:self.config.kRiseColor];
         }
@@ -140,7 +145,7 @@
         CGPoint previousPointZhu =CGPointFromString([self.zspjMutPointArr objectAtIndex:i]);
         UILabel * lineLbZhu = [[UILabel alloc]init];
         if (currentPointZhu.y == previousPointZhu.y) {
-            lineLbZhu.frame =CGRectMake(currentPointZhu.x, currentPointZhu.y, xWidth, previousPointZhu.y -currentPointZhu.y+0.5);
+            lineLbZhu.frame =CGRectMake(currentPointZhu.x, currentPointZhu.y, xWidth, 1);
 
         }
         else{
@@ -211,20 +216,22 @@
         CGPoint  currentjkpoint=CGPointFromString([self.jksjMutPointArr objectAtIndex:mid]);
         CGPoint  currentvolumpoint=CGPointFromString([self.volumMutPointArr objectAtIndex:mid]);
 
-        self.moveHLineLabel.frame = CGRectMake(currentjkpoint.x + (self.zhuWidth-1)/2.0, 0, 1, self.klineBackView.frame.size.height);
-        self.moveVLineLabel.frame = CGRectMake(0, currentjkpoint.y, self.klineBackView.frame.size.width, 1);
-        self.moveCenterLabel.frame = CGRectMake(currentjkpoint.x+ (self.zhuWidth-1)/2.0-2, currentjkpoint.y-2, 4, 4);
-        self.volumVLineLabel.frame = CGRectMake(0, currentvolumpoint.y, self.volumBackView.frame.size.width, 1);
-        self.volumHLineLabel.frame = CGRectMake(currentvolumpoint.x , -5, 1, self.volumBackView.frame.size.height+10);
-        self.volumCenterLabel.frame = CGRectMake(currentvolumpoint.x-2, currentvolumpoint.y-2, 4, 4);
+        self.moveHLineLabel.frame = CGRectMake(currentjkpoint.x + self.config.spaceLeft + (self.zhuWidth-1)/2.0, self.config.spaceTop, 1, self.klineBackView.frame.size.height);
+        self.moveVLineLabel.frame = CGRectMake(0+self.config.spaceLeft, currentjkpoint.y+self.config.spaceTop, self.klineBackView.frame.size.width, 1);
+        
+        self.moveCenterLabel.frame = CGRectMake(currentjkpoint.x-2+self.config.spaceLeft+ (self.zhuWidth-1)/2.0, currentjkpoint.y-2+self.config.spaceTop, 4, 4);
+        
+        self.volumVLineLabel.frame = CGRectMake(0+self.config.spaceLeft, currentvolumpoint.y+self.config.spaceTop+self.config.spaceBottom+self.config.lineViewHeight+5, self.volumBackView.frame.size.width, 1);
+        self.volumHLineLabel.frame = CGRectMake(currentvolumpoint.x+self.config.spaceLeft + (self.zhuWidth-1)/2.0, self.config.spaceTop+self.config.spaceBottom+self.config.lineViewHeight, 1, self.volumBackView.frame.size.height+10);
+        self.volumCenterLabel.frame = CGRectMake(currentvolumpoint.x-2+self.config.spaceLeft + (self.zhuWidth-1)/2.0, currentvolumpoint.y-2+self.config.spaceTop+self.config.spaceBottom+self.config.lineViewHeight+5, 4, 4);
 
         if (currentjkpoint.x + (self.zhuWidth-1)/2.0 > self.klineBackView.frame.size.width/2.0) {
-            self.valueNumLabel.frame = CGRectMake(self.klineBackView.frame.size.width-30, currentjkpoint.y-7.5, 30, 15);
-            self.volumLabel.frame = CGRectMake(self.volumBackView.frame.size.width-30, currentvolumpoint.y-7.5, 30, 15);
+            self.valueNumLabel.frame = CGRectMake(self.frame.size.width-self.config.spaceRight-30+self.zhuWidth/2.0, currentjkpoint.y-7.5+self.config.spaceTop, 30, 15);
+            self.volumLabel.frame = CGRectMake(self.frame.size.width-self.config.spaceRight-30+self.zhuWidth/2.0, currentvolumpoint.y-7.5+self.config.spaceTop+self.config.spaceBottom+self.config.lineViewHeight, 30, 15);
 
         }else{
-            self.valueNumLabel.frame = CGRectMake(0, currentjkpoint.y-7.5, 30, 15);
-            self.volumLabel.frame = CGRectMake(0, currentvolumpoint.y-7.5, 30, 15);
+            self.valueNumLabel.frame = CGRectMake(0+self.config.spaceLeft-self.zhuWidth/2.0, currentjkpoint.y-7.5+self.config.spaceTop, 30, 15);
+            self.volumLabel.frame = CGRectMake(0+self.config.spaceLeft-self.zhuWidth/2.0, currentvolumpoint.y-7.5+self.config.spaceTop+self.config.spaceBottom+self.config.lineViewHeight, 30, 15);
 
         }
         self.valueNumLabel.text = currentModel.jksj;
@@ -245,34 +252,144 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     UITouch * touch = [touches anyObject];
-    CGPoint point = [touch  locationInView:self.klineBackView];
-    beginTouchPoint = point;
-//    pagesright = 1;
-//    pageLeft = 1;
-}
--(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    UITouch * touch = [touches anyObject];
-    CGPoint point = [touch  locationInView:self.klineBackView];
-    if (point.x > beginTouchPoint.x) {
-        int counts = (point.x - beginTouchPoint.x)/self.zhuWidth;
-        if (counts > 0) {
-            if (self.delegate) {
-                [self.delegate moveViewWithIsLeft:NO Count:counts];
-            }
-            beginTouchPoint = point;
-        }
-    }else{
-        
-        int counts = (beginTouchPoint.x - point.x)/self.zhuWidth;
-        if (counts > 0) {
-            if (self.delegate) {
-                [self.delegate moveViewWithIsLeft:YES Count:counts];
-            }
-            beginTouchPoint = point;
-        }
+
+    if (touch.view == self.klineBackView || touch.view == self.volumBackView) {
+        CGPoint point = [touch  locationInView:self.klineBackView];
+        beginTouchPoint = point;
 
     }
 }
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = [touches anyObject];
+    if (touch.view == self.klineBackView || touch.view == self.volumBackView) {
+
+        CGPoint point = [touch  locationInView:self.klineBackView];
+        if (point.x > beginTouchPoint.x) {
+            int counts = (point.x - beginTouchPoint.x)/self.zhuWidth;
+            if (counts > 0) {
+                if (self.delegate) {
+                    [self.delegate moveViewWithIsLeft:NO Count:counts];
+                }
+                beginTouchPoint = point;
+            }
+        }else{
+            
+            int counts = (beginTouchPoint.x - point.x)/self.zhuWidth;
+            if (counts > 0) {
+                if (self.delegate) {
+                    [self.delegate moveViewWithIsLeft:YES Count:counts];
+                }
+                beginTouchPoint = point;
+            }
+
+        }
+    }
+}
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+}
+int sl =0;
+
+-(void)touchBoxAction:(UIPinchGestureRecognizer*)pGesture{
+    UIPinchGestureRecognizer* ges = (UIPinchGestureRecognizer*)pGesture;
+    NSUInteger touchCount = ges.numberOfTouches;
+    UIGestureRecognizerState state = [pGesture state];
+    if (touchCount == 2) {
+        CGFloat spacs = 0;
+        if (state == UIGestureRecognizerStateBegan){
+           
+            oneBeginPinchPoint = [pGesture locationOfTouch: 0 inView:self.klineBackView ];
+        
+            twoBeginPinchPoint = [pGesture locationOfTouch: 1 inView:self.klineBackView ];
+            if (oneBeginPinchPoint.x > twoBeginPinchPoint.x) {
+                spacs = oneBeginPinchPoint.x - twoBeginPinchPoint.x;
+
+            }else{
+                spacs = twoBeginPinchPoint.x - oneBeginPinchPoint.x;
+            }
+        }
+        else if (state == UIGestureRecognizerStateChanged){
+           
+            //第一个手指坐标
+            CGPoint currentOnePoint = [pGesture locationOfTouch: 0 inView:self.klineBackView ];
+            //第二个手指坐标
+            CGPoint currentTwoPoint = [pGesture locationOfTouch: 1 inView:self.klineBackView ];
+            if (oneBeginPinchPoint.x > twoBeginPinchPoint.x) {
+                if (currentOnePoint.x > oneBeginPinchPoint.x) {
+                     CGFloat distance = currentOnePoint.x - oneBeginPinchPoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:NO isAdd:NO];
+                        oneBeginPinchPoint = currentOnePoint;
+                    }
+
+
+                }else{
+                     CGFloat distance = oneBeginPinchPoint.x - currentOnePoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:NO isAdd:YES];
+                        oneBeginPinchPoint = currentOnePoint;
+                    }
+
+                }
+                if (currentTwoPoint.x > twoBeginPinchPoint.x) {
+                     CGFloat distance = currentTwoPoint.x - twoBeginPinchPoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:YES isAdd:YES];
+                        twoBeginPinchPoint = currentTwoPoint;
+                    }
+
+
+                }else{
+                     CGFloat distance = twoBeginPinchPoint.x - currentTwoPoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:YES isAdd:NO];
+                        twoBeginPinchPoint = currentTwoPoint;
+                    }
+
+                }
+
+
+            }else{
+                if (currentOnePoint.x > oneBeginPinchPoint.x) {
+                     CGFloat distance = currentOnePoint.x - oneBeginPinchPoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:YES isAdd:YES];
+                        oneBeginPinchPoint = currentOnePoint;
+                    }
+
+
+                }else{
+                     CGFloat distance = oneBeginPinchPoint.x - currentOnePoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:YES isAdd:NO];
+                        oneBeginPinchPoint = currentOnePoint;
+                    }
+
+                }
+                if (currentTwoPoint.x > twoBeginPinchPoint.x) {
+                     CGFloat distance = currentTwoPoint.x - twoBeginPinchPoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:NO isAdd:NO];
+                        twoBeginPinchPoint = currentTwoPoint;
+                    }
+
+
+                }else{
+                     CGFloat distance = twoBeginPinchPoint.x - currentTwoPoint.x;
+                    if (distance >= self.zhuWidth) {
+                        [self.delegate scaleViewWithIsLeft:NO isAdd:YES];
+                        twoBeginPinchPoint = currentTwoPoint;
+                    }
+
+                }
+
+            }
+            
+
+        }
+    }
+
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

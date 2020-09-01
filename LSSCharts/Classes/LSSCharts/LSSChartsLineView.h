@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LSSChartsLineView : LSSChartsBaseView{
     CGPoint touchViewPoint;
     CGPoint beginTouchPoint;
+    CGPoint oneBeginPinchPoint;
+    CGPoint twoBeginPinchPoint;
 
 }
 -(void)drawStroke;

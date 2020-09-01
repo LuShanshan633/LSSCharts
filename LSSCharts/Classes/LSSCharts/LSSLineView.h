@@ -13,11 +13,11 @@
 #import "LSSHistogramView.h"
 @protocol LSSLineViewDelegate <NSObject>
 
--(void)moveViewWithLOrR:(BOOL)isLeft Count:(int)count;
-
--(void)scaleViewWithDOrX:(BOOL)isDa;
-
--(void)valuesLbWithModel:(LSSDataModel*)model;
+//-(void)moveViewWithLOrR:(BOOL)isLeft Count:(int)count;
+//
+//-(void)scaleViewWithDOrX:(BOOL)isDa;
+//
+//-(void)valuesLbWithModel:(LSSDataModel*)model;
 
 @end
 

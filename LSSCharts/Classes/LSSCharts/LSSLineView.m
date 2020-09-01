@@ -284,11 +284,11 @@ int pagesright = 0;
                 int count = counts - pageLeft;
                 if (pageLeft!=counts) {
                     if (count >0) {
-                        [_delegate moveViewWithLOrR:NO Count:count];
+//                        [_delegate moveViewWithLOrR:NO Count:count];
                         
                     }
                     else{
-                        [_delegate moveViewWithLOrR:YES Count:-count];
+//                        [_delegate moveViewWithLOrR:YES Count:-count];
 
                     }
                     pageLeft = counts;
@@ -306,11 +306,11 @@ int pagesright = 0;
                 
                 if (pagesright!=counts) {
                     if (count >0) {
-                        [_delegate moveViewWithLOrR:YES Count:count];
+//                        [_delegate moveViewWithLOrR:YES Count:count];
                         
                     }
                     else{
-                        [_delegate moveViewWithLOrR:NO Count:-count];
+//                        [_delegate moveViewWithLOrR:NO Count:-count];
 
                     }
                     pagesright = counts;
@@ -333,14 +333,14 @@ int s=0;
             if (pGesture.scale>1) {
                 if (self.points.count > 4 && [[[[NSString stringWithFormat:@"%f",pGesture.scale] componentsSeparatedByString:@"."] objectAtIndex:0] intValue]  != s) {
                     s=[[[[NSString stringWithFormat:@"%f",pGesture.scale] componentsSeparatedByString:@"."] objectAtIndex:0] intValue];
-                    [_delegate scaleViewWithDOrX:YES];
+//                    [_delegate scaleViewWithDOrX:YES];
                 }
                 // 放大手势
             }else{
                 if (self.points.count < 50 ) {
                     s = 0;
                     
-                    [_delegate scaleViewWithDOrX:NO];
+//                    [_delegate scaleViewWithDOrX:NO];
                 }
                 // 缩小手势
             }
@@ -387,7 +387,7 @@ int s=0;
         if(longResture.state == UIGestureRecognizerStateBegan){
             [self initLb];
             if ([_delegate respondsToSelector:@selector(valuesLbWithModel:)]) {
-                [_delegate valuesLbWithModel:models];
+//                [_delegate valuesLbWithModel:models];
             }
 
             movelineone.frame = CGRectMake(0, points.y-0.25, kLineView.frame.size.width, 0.5);
@@ -407,7 +407,7 @@ int s=0;
         
         if (longResture.state == UIGestureRecognizerStateChanged && points.x>2.5 && points.x<kLineView.frame.size.width ) {
             if ([_delegate respondsToSelector:@selector(valuesLbWithModel:)]) {
-                [_delegate valuesLbWithModel:models];
+//                [_delegate valuesLbWithModel:models];
             }
 
             movelineone.frame = CGRectMake(0, points.y-0.25, kLineView.frame.size.width, 0.5);
@@ -456,7 +456,7 @@ int s=0;
         if(longResture.state == UIGestureRecognizerStateBegan && points.x<kLineView.frame.size.width - 1){
             [self initLb];
             if ([_delegate respondsToSelector:@selector(valuesLbWithModel:)]) {
-                [_delegate valuesLbWithModel:models];
+//                [_delegate valuesLbWithModel:models];
             }
             movelineone.frame = CGRectMake(0, points.y-0.25, kLineView.frame.size.width, 0.5);
             movelinetwo.frame = CGRectMake(points.x-0.25, 0, 0.5, kLineView.frame.size.height);
@@ -507,7 +507,7 @@ int s=0;
         // 手指移动时候开始显示十字线
         if (longResture.state == UIGestureRecognizerStateChanged && points.x>3 && points.x<kLineView.frame.size.width - 1) {
             if ([_delegate respondsToSelector:@selector(valuesLbWithModel:)]) {
-                [_delegate valuesLbWithModel:models];
+//                [_delegate valuesLbWithModel:models];
             }
             movelineone.frame = CGRectMake(0, points.y-0.25, kLineView.frame.size.width, 0.5);
             movelinetwo.frame = CGRectMake(points.x-0.25, 0, 0.5, kLineView.frame.size.height);
@@ -571,7 +571,7 @@ int s=0;
         moveHistogramlineone.hidden  = YES;
         histogramCenterLb.hidden  = YES;
         if ([_delegate respondsToSelector:@selector(valuesLbWithModel:)]) {
-            [_delegate valuesLbWithModel:nil];
+//            [_delegate valuesLbWithModel:nil];
         }
     }
 }

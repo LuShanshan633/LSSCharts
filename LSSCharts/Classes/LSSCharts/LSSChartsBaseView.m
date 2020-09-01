@@ -17,7 +17,7 @@
         self.config.spaceLeft = config.spaceLeft > 0 ? self.config.spaceLeft:30;
         self.config.spaceRight = config.spaceRight > 0 ? self.config.spaceRight:30;
 
-        self.config.lineViewHeight = config.lineViewHeight > 0 ? config.lineViewHeight : self.frame.size.height/3.0*2.0 - config.spaceTop - config.spaceBottom;
+        self.config.lineViewHeight = config.lineViewHeight > 0 ? config.lineViewHeight : self.frame.size.height/4.0*3.0 - config.spaceTop - config.spaceBottom;
 
         self.backgroundColor =  [UIColor whiteColor];
     }
@@ -137,7 +137,8 @@
     CGContextAddLineToPoint(contextss, left + w,  top);   //终点坐标
 
     CGContextStrokePath(contextss);
-    self.volumBackView.frame = CGRectMake(left + self.zhuWidth/2.0, top+5, w - self.zhuWidth, self.frame.size.height - self.config.lineViewHeight - self.config.spaceTop-self.config.spaceBottom-10);
+    self.volumBackView.frame = CGRectMake(self.config.spaceLeft, top+5, self.viewWidth, self.frame.size.height - self.config.lineViewHeight - self.config.spaceTop-self.config.spaceBottom-10);
+
 }
 
 
@@ -173,7 +174,7 @@
     //线形图图形区域点之间的间隔
     CGFloat lineWidth = [self lineWidths:dataSource viewWidth:self.viewWidth];
     self.zhuWidth = lineWidth;
-    self.klineBackView.frame = CGRectMake( self.config.spaceLeft-self.zhuWidth/2.0, self.config.spaceTop, self.viewWidth+self.zhuWidth, self.config.lineViewHeight);
+    self.klineBackView.frame = CGRectMake( self.config.spaceLeft, self.config.spaceTop, self.viewWidth, self.config.lineViewHeight);
 
     CGFloat volumHeight = self.frame.size.height - self.config.lineViewHeight - self.config.spaceBottom - self.config.spaceTop-10;
     CGFloat volumMax = [self maxWithArr:valomArr];
@@ -205,7 +206,7 @@
 }
 //获取📊柱子宽度
 -(CGFloat)lineWidths:(NSMutableArray*)arr viewWidth:(CGFloat)viewWidth{
-    return viewWidth/(arr.count - 1);
+    return (self.frame.size.width - self.config.spaceLeft - self.config.spaceRight)/arr.count;
 }
 
 -(CGFloat)maxWithArr:(NSArray *)arr{
@@ -241,7 +242,7 @@
     if (!_moveHLineLabel) {
         _moveHLineLabel = [[UILabel alloc]init];
         _moveHLineLabel.backgroundColor = self.config.showMoveLineColor;
-        [self.klineBackView addSubview:_moveHLineLabel];
+        [self addSubview:_moveHLineLabel];
     }
     return _moveHLineLabel;
 }
@@ -249,7 +250,7 @@
     if (!_moveVLineLabel) {
         _moveVLineLabel = [[UILabel alloc]init];
         _moveVLineLabel.backgroundColor = self.config.showMoveLineColor;
-        [self.klineBackView addSubview:_moveVLineLabel];
+        [self addSubview:_moveVLineLabel];
     }
     return _moveVLineLabel;
 }
@@ -261,7 +262,7 @@
         _volumLabel.textAlignment = NSTextAlignmentCenter;
         _volumLabel.backgroundColor = self.config.showMoveTitleBackColor;
         _volumLabel.textColor = self.config.showMoveLabelTitleColor;
-        [self.volumBackView addSubview:_volumLabel];
+        [self addSubview:_volumLabel];
     }
     return _volumLabel;
 }
@@ -269,7 +270,7 @@
     if (!_volumHLineLabel) {
         _volumHLineLabel = [[UILabel alloc]init];
         _volumHLineLabel.backgroundColor = self.config.showMoveLineColor;
-        [self.volumBackView addSubview:_volumHLineLabel];
+        [self addSubview:_volumHLineLabel];
     }
     return _volumHLineLabel;
 }
@@ -277,7 +278,7 @@
     if (!_volumVLineLabel) {
         _volumVLineLabel = [[UILabel alloc]init];
         _volumVLineLabel.backgroundColor = self.config.showMoveLineColor;
-        [self.volumBackView addSubview:_volumVLineLabel];
+        [self addSubview:_volumVLineLabel];
     }
     return _volumVLineLabel;
 }
@@ -287,7 +288,7 @@
         _moveCenterLabel.backgroundColor = [UIColor blackColor];
         _moveCenterLabel.layer.masksToBounds = YES;
         _moveCenterLabel.layer.cornerRadius = 2;
-        [self.klineBackView addSubview:_moveCenterLabel];
+        [self addSubview:_moveCenterLabel];
     }
     return _moveCenterLabel;
 }
@@ -298,7 +299,7 @@
         _volumCenterLabel.backgroundColor = [UIColor blackColor];
         _volumCenterLabel.layer.masksToBounds = YES;
         _volumCenterLabel.layer.cornerRadius = 2;
-        [self.volumBackView addSubview:_volumCenterLabel];
+        [self addSubview:_volumCenterLabel];
     }
     return _volumCenterLabel;
 }
@@ -310,7 +311,7 @@
         _valueNumLabel.textAlignment = NSTextAlignmentCenter;
         _valueNumLabel.backgroundColor = self.config.showMoveTitleBackColor;
         _valueNumLabel.textColor = self.config.showMoveLabelTitleColor;
-        [self.klineBackView addSubview:_valueNumLabel];
+        [self addSubview:_valueNumLabel];
     }
     return _valueNumLabel;
 }
@@ -320,7 +321,7 @@
         _timeNumLabel = [[UILabel alloc]init];
         _timeNumLabel.backgroundColor = self.config.showMoveTitleBackColor;
         _timeNumLabel.textColor = self.config.showMoveLabelTitleColor;
-        [self.klineBackView addSubview:_timeNumLabel];
+        [self addSubview:_timeNumLabel];
     }     return _timeNumLabel;
 }
 
