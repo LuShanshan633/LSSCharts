@@ -9,8 +9,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LSSChartsLineView : LSSChartsBaseView
-
+@interface LSSChartsLineView : LSSChartsBaseView{
+    CGPoint touchViewPoint;
+}
+-(void)drawStroke;
 @end
 
 NS_ASSUME_NONNULL_END

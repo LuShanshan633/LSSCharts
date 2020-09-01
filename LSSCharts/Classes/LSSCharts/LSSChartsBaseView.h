@@ -8,6 +8,11 @@
 #import <UIKit/UIKit.h>
 #import "LSSChartsConfig.h"
 #import "LSSDataModel.h"
+typedef enum : NSUInteger {
+    LSSBezierCharts,//折线图
+    LSSLineCharts//k线图
+} LSSChartsType;
+
 @protocol LSSChartsViewDelegate <NSObject>
 
 -(void)moveViewWithLOrR:(BOOL)isLeft Count:(int)count;
@@ -32,7 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) NSMutableArray * jksjMutPointArr;
 @property (nonatomic,strong) NSMutableArray * zspjMutPointArr;
 @property (nonatomic,strong) NSMutableArray * jsjMutPointArr;
-@property (nonatomic,strong) NSMutableArray * xlMutPointArr;
+@property (nonatomic,strong) NSMutableArray * volumMutPointArr;
 
 @property (nonatomic,assign) CGFloat maxNum;
 @property (nonatomic,assign) CGFloat minNum;
@@ -40,10 +45,23 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign) CGFloat maxVolumNum;
 @property (nonatomic,assign) CGFloat minVolumNum;
 @property (nonatomic,assign) CGFloat viewWidth;
-@property (nonatomic,assign) CGFloat viewHeigth;
+@property (nonatomic,assign) CGFloat zhuWidth;
+
+@property (nonatomic,assign) LSSChartsType chartsType;
+@property (nonatomic,strong) UIView * klineBackView;
+@property (nonatomic,strong) UIView * volumBackView;
+@property (nonatomic,strong) UILabel * moveVLineLabel;
+@property (nonatomic,strong) UILabel * moveHLineLabel;
+@property (nonatomic,strong) UILabel * valueNumLabel;
+@property (nonatomic,strong) UILabel * timeNumLabel;
+@property (nonatomic,strong) UILabel * volumHLineLabel;
+@property (nonatomic,strong) UILabel * volumVLineLabel;
+@property (nonatomic,strong) UILabel * volumLabel;
 
 -(instancetype)initWithConfig:(LSSChartsConfig *)config frame:(CGRect)frame;
 -(void)drawNumBackLine;
+-(void)drawLineBackLine;
+-(void)drawDealVolumBackLine;
 
 @end
 

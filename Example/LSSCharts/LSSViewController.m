@@ -13,6 +13,7 @@
 {
     LSSLineView * bezierView;
     TabButtonView * tabView;
+    LSSChartsLineView * lineView;
     
 }
 @property(nonatomic,strong)NSMutableArray * dataMutArr;
@@ -28,21 +29,36 @@
 {
     [super viewDidLoad];
 
-    tabView = [[TabButtonView alloc]initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 30)];
-    tabView.delegate = self;
-    [tabView initWithView];
-    [tabView setBackgroundColor:[UIColor whiteColor]];
-    [self.view addSubview:tabView];
-   
+//    tabView = [[TabButtonView alloc]initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 30)];
+//    tabView.delegate = self;
+//    [tabView initWithView];
+//    [tabView setBackgroundColor:[UIColor whiteColor]];
+//    [self.view addSubview:tabView];
+//
     [self data];
 
-    bezierView = [[LSSLineView alloc]initWithFrame:CGRectMake(0, 110, self.view.frame.size.width, self.view.frame.size.height-110-49-25)];
-    bezierView.points = _dataMutArr;
-    bezierView.delegate = self;
-    bezierView.isDragging = YES;
-    [bezierView setBackgroundColor:[UIColor clearColor]];
-    [self.view addSubview:bezierView];
-    [bezierView startDroke];
+//    bezierView = [[LSSLineView alloc]initWithFrame:CGRectMake(0, 110, self.view.frame.size.width, self.view.frame.size.height-110-49-25)];
+//    bezierView.points = _dataMutArr;
+//    bezierView.delegate = self;
+//    bezierView.isDragging = YES;
+//    [bezierView setBackgroundColor:[UIColor clearColor]];
+//    [self.view addSubview:bezierView];
+//    [bezierView startDroke];
+    LSSChartsConfig * config = [LSSChartsConfig new];
+//    config.kRiseColor = [UIColor redColor];
+//    config.kFallColor = [UIColor greenColor];
+    config.lineBlueColor = [UIColor blueColor];
+    config.lineRedColor = [UIColor redColor];
+    config.lineYellowColor = [UIColor yellowColor];
+    config.showMoveLineColor = [UIColor lightGrayColor];
+    config.showMoveTitleBackColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
+    config.showMoveLabelTitleColor = [UIColor whiteColor];
+    lineView = [[LSSChartsLineView alloc]initWithConfig:config frame:CGRectMake(0, 110, self.view.frame.size.width, 300)];
+    lineView.backgroundColor = [UIColor whiteColor];
+    lineView.dataSource = _dataMutArr;
+    lineView.chartsType = LSSLineCharts;
+    [self.view addSubview:lineView];
+    [lineView drawStroke];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 -(void)data{

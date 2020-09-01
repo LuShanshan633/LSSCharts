@@ -11,6 +11,10 @@
 #endif
 
 #import "LSSBezierView.h"
+#import "LSSCharts.h"
+#import "LSSChartsBaseView.h"
+#import "LSSChartsConfig.h"
+#import "LSSChartsLineView.h"
 #import "LSSDataModel.h"
 #import "LSSHistogramView.h"
 #import "LSSLineView.h"

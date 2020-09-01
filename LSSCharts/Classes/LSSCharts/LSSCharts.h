@@ -14,6 +14,7 @@
 #import "TabButtonView.h"
 #import "UIImage+Utilities.h"
 #import "UINavigationController+Autorotate.h"
+#import "LSSChartsLineView.h"
 
 
 #endif /* LSSCharts_h */
