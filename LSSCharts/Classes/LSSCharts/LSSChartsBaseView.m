@@ -281,6 +281,27 @@
     }
     return _volumVLineLabel;
 }
+- (UILabel *)moveCenterLabel{
+    if (!_moveCenterLabel) {
+        _moveCenterLabel = [[UILabel alloc]init];
+        _moveCenterLabel.backgroundColor = [UIColor blackColor];
+        _moveCenterLabel.layer.masksToBounds = YES;
+        _moveCenterLabel.layer.cornerRadius = 2;
+        [self.klineBackView addSubview:_moveCenterLabel];
+    }
+    return _moveCenterLabel;
+}
+
+- (UILabel *)volumCenterLabel{
+    if (!_volumCenterLabel) {
+        _volumCenterLabel = [[UILabel alloc]init];
+        _volumCenterLabel.backgroundColor = [UIColor blackColor];
+        _volumCenterLabel.layer.masksToBounds = YES;
+        _volumCenterLabel.layer.cornerRadius = 2;
+        [self.volumBackView addSubview:_volumCenterLabel];
+    }
+    return _volumCenterLabel;
+}
 
 -(UILabel *)valueNumLabel{
     if (!_valueNumLabel) {

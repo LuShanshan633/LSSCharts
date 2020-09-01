@@ -114,6 +114,13 @@
 }
 ///K线图
 -(void)getKline{
+    for (UIView * v in self.klineBackView.subviews) {
+        [v removeFromSuperview];
+    }
+    for (UIView * v in self.volumBackView.subviews) {
+        [v removeFromSuperview];
+    }
+
     for (int i = 0;i<self.dataSource.count;i++) {
         LSSDataModel * model = [self.dataSource objectAtIndex:i];
         CGPoint  currentPoint=CGPointFromString([self.zgjMutPointArr objectAtIndex:i]);
@@ -196,6 +203,8 @@
         self.volumVLineLabel.frame = CGRectZero;
         self.volumHLineLabel.frame = CGRectZero;
         self.volumLabel.frame = CGRectZero;
+        self.moveCenterLabel.frame = CGRectZero;
+        self.volumCenterLabel.frame = CGRectZero;
     }
     if (found) {
         LSSDataModel * currentModel = self.dataSource[mid];
@@ -204,8 +213,10 @@
 
         self.moveHLineLabel.frame = CGRectMake(currentjkpoint.x + (self.zhuWidth-1)/2.0, 0, 1, self.klineBackView.frame.size.height);
         self.moveVLineLabel.frame = CGRectMake(0, currentjkpoint.y, self.klineBackView.frame.size.width, 1);
+        self.moveCenterLabel.frame = CGRectMake(currentjkpoint.x+ (self.zhuWidth-1)/2.0-2, currentjkpoint.y-2, 4, 4);
         self.volumVLineLabel.frame = CGRectMake(0, currentvolumpoint.y, self.volumBackView.frame.size.width, 1);
         self.volumHLineLabel.frame = CGRectMake(currentvolumpoint.x , -5, 1, self.volumBackView.frame.size.height+10);
+        self.volumCenterLabel.frame = CGRectMake(currentvolumpoint.x-2, currentvolumpoint.y-2, 4, 4);
 
         if (currentjkpoint.x + (self.zhuWidth-1)/2.0 > self.klineBackView.frame.size.width/2.0) {
             self.valueNumLabel.frame = CGRectMake(self.klineBackView.frame.size.width-30, currentjkpoint.y-7.5, 30, 15);
@@ -226,8 +237,41 @@
         self.volumVLineLabel.frame = CGRectZero;
         self.volumHLineLabel.frame = CGRectZero;
         self.volumLabel.frame = CGRectZero;
+        self.moveCenterLabel.frame = CGRectZero;
+        self.volumCenterLabel.frame = CGRectZero;
     }
 
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = [touches anyObject];
+    CGPoint point = [touch  locationInView:self.klineBackView];
+    beginTouchPoint = point;
+//    pagesright = 1;
+//    pageLeft = 1;
+}
+-(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch * touch = [touches anyObject];
+    CGPoint point = [touch  locationInView:self.klineBackView];
+    if (point.x > beginTouchPoint.x) {
+        int counts = (point.x - beginTouchPoint.x)/self.zhuWidth;
+        if (counts > 0) {
+            if (self.delegate) {
+                [self.delegate moveViewWithIsLeft:NO Count:counts];
+            }
+            beginTouchPoint = point;
+        }
+    }else{
+        
+        int counts = (beginTouchPoint.x - point.x)/self.zhuWidth;
+        if (counts > 0) {
+            if (self.delegate) {
+                [self.delegate moveViewWithIsLeft:YES Count:counts];
+            }
+            beginTouchPoint = point;
+        }
+
+    }
 }
 /*
 // Only override drawRect: if you perform custom drawing.

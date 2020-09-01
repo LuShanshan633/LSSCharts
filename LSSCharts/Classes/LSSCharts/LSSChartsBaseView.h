@@ -15,7 +15,7 @@ typedef enum : NSUInteger {
 
 @protocol LSSChartsViewDelegate <NSObject>
 
--(void)moveViewWithLOrR:(BOOL)isLeft Count:(int)count;
+-(void)moveViewWithIsLeft:(BOOL)isLeft Count:(int)count;
 
 -(void)scaleViewWithDOrX:(BOOL)isDa;
 
@@ -57,6 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,strong) UILabel * volumHLineLabel;
 @property (nonatomic,strong) UILabel * volumVLineLabel;
 @property (nonatomic,strong) UILabel * volumLabel;
+@property (nonatomic,strong) UILabel * moveCenterLabel;
+@property (nonatomic,strong) UILabel * volumCenterLabel;
 
 -(instancetype)initWithConfig:(LSSChartsConfig *)config frame:(CGRect)frame;
 -(void)drawNumBackLine;
