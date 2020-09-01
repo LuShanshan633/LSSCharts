@@ -28,22 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-//    tabView = [[TabButtonView alloc]initWithFrame:CGRectMake(0, 80, self.view.frame.size.width, 30)];
-//    tabView.delegate = self;
-//    [tabView initWithView];
-//    [tabView setBackgroundColor:[UIColor whiteColor]];
-//    [self.view addSubview:tabView];
-//
+    
     [self data];
-
-//    bezierView = [[LSSLineView alloc]initWithFrame:CGRectMake(0, 110, self.view.frame.size.width, self.view.frame.size.height-110-49-25)];
-//    bezierView.points = _dataMutArr;
-//    bezierView.delegate = self;
-//    bezierView.isDragging = YES;
-//    [bezierView setBackgroundColor:[UIColor clearColor]];
-//    [self.view addSubview:bezierView];
-//    [bezierView startDroke];
+    
     LSSChartsConfig * config = [LSSChartsConfig new];
 //    config.kRiseColor = [UIColor redColor];
 //    config.kFallColor = [UIColor greenColor];
@@ -132,11 +119,6 @@
     
 }
 
--(void)selectWithIndex:(NSInteger)index{
-    bezierView.Type = index;
-    [bezierView startDroke];
-    NSLog(@"%ld",(long)index);
-}
 -(void)scaleViewWithIsLeft:(BOOL)isLeft isAdd:(BOOL)isAdd{
     if (isLeft == YES) {
         if (isAdd == YES) {
@@ -201,33 +183,6 @@
         }
     }
 }
--(void)scaleViewWithDOrX:(BOOL)isDa{
-
-    if (isDa == YES) {
-        [_dataMutArr removeLastObject];
-        lineView.dataSource = _dataMutArr;
-        [lineView drawStroke];
-    }
-    else{
-        int val = [self getRandomNumber:11 to:20];
-        int val1 = [self getRandomNumber:1 to:10];
-        int val2 =  [self getRandomNumber:val1 to:val];
-        int val3 = [self getRandomNumber:val1 to:val];
-        int val4 = [self getRandomNumber:1 to:200];
-        LSSDataModel * model = [[LSSDataModel alloc]init];
-        model.zgj =[NSString stringWithFormat:@"%d",val] ;
-        model.zdj = [NSString stringWithFormat:@"%d",val1];
-        model.jksj = [NSString stringWithFormat:@"%d",val2];
-        model.zspj = [NSString stringWithFormat:@"%d",val3];
-        model.xl = [NSString stringWithFormat:@"%d",val4];
-        [_dataMutArr addObject:model];
-        lineView.dataSource = _dataMutArr;
-//        [_dataMutArr insertObject:model atIndex:0];
-        [lineView drawStroke];
-
-    }
-}
-
 -(int)getRandomNumber:(int)from to:(int)to
 
 {

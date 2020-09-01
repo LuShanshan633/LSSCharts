@@ -236,6 +236,7 @@
         }
         self.valueNumLabel.text = currentModel.jksj;
         self.volumLabel.text = currentModel.xl;
+        [self.delegate valuesLbWithModel:currentModel];
     }
     if (longResture.state == UIGestureRecognizerStateEnded) {
         self.moveHLineLabel.frame = CGRectZero;

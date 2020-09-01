@@ -17,7 +17,6 @@ typedef enum : NSUInteger {
 
 -(void)moveViewWithIsLeft:(BOOL)isLeft Count:(int)count;
 
--(void)scaleViewWithDOrX:(BOOL)isDa;
 -(void)scaleViewWithIsLeft:(BOOL)isLeft isAdd:(BOOL)isAdd;
 
 -(void)valuesLbWithModel:(LSSDataModel *_Nonnull)model;

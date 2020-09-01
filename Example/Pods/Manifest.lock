@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - LSSCharts (0.1.7)
+  - LSSCharts (0.1.8)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  LSSCharts: a9ba0763bb371c1c98fcc327f5dd1a7156f49c04
+  LSSCharts: 27afb378fc7d1fde4ee6811a29de6c67ec9b0ff7
 
 PODFILE CHECKSUM: 4f97a9568a2efcf21b5ff4f2c58b4f004c400b53
 
