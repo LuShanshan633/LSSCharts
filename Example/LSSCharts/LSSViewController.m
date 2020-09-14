@@ -11,7 +11,6 @@
 
 @interface LSSViewController ()<LSSChartsViewDelegate>
 {
-    LSSLineView * bezierView;
     TabButtonView * tabView;
     LSSChartsLineView * lineView;
     

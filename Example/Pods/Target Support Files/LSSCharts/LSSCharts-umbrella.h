@@ -16,8 +16,6 @@
 #import "LSSChartsConfig.h"
 #import "LSSChartsLineView.h"
 #import "LSSDataModel.h"
-#import "LSSHistogramView.h"
-#import "LSSLineView.h"
 #import "TabButtonView.h"
 #import "UIImage+Utilities.h"
 #import "UINavigationController+Autorotate.h"

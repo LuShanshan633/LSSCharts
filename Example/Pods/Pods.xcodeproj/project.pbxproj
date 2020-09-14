@@ -21,22 +21,18 @@
 		33F717E977637B2B6C7B91DC8B42A9BB /* LSSChartsLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = F46E4C6D97821ED24A20C3E7DF21E9F6 /* LSSChartsLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		360781B30223DE9590BC297CD2A4D6A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		43D79CAAB872EB32810765D0912E6D4C /* LSSLineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3292F35E77405054A78F41CB4021B8 /* LSSLineView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BDD6CC92F999109EC6A5DD0368DD838 /* Pods-LSSCharts_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60259CC10E2E367EDD6DAF109B1210F9 /* Pods-LSSCharts_Example-dummy.m */; };
 		56B6230B1C3F4CB2D4B5E06BED780A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		747112AC56541F07A1C84F3FEA6D65B2 /* Pods-LSSCharts_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF5B97BA5682EBCFC6642752D7E69CC /* Pods-LSSCharts_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		770FFA0B4F5F3AE183ED3BCA314DB9B4 /* LSSLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A54C6ECA271AD1D1B2817198862CD5 /* LSSLineView.m */; };
 		7945679BA234CAB7EBF465F14CB73B1E /* UINavigationController+Autorotate.h in Headers */ = {isa = PBXBuildFile; fileRef = D37572C97AC2C77F7B6BD6626E037622 /* UINavigationController+Autorotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B3FB9280108A6E64DE275283A5A3CA6 /* Pods-LSSCharts_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E434A59DD5BC1F5A1C156F1C1D419B3D /* Pods-LSSCharts_Tests-dummy.m */; };
-		7C8FFFACDCFFA603D35B0004BA12F427 /* LSSHistogramView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3564D2C5746685CCC7F5DF62689C06C5 /* LSSHistogramView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		8BDE91F85D13E86E74E16C9B816DA5DE /* LSSDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B1AF035395E4BCEB108B10A030213DD6 /* LSSDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		9001BFE9EA4B94DDE045C2A8CB6C116B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93A94A72724DE7FC65801DC9AB116FB2 /* LSSHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3676C65BE470ED8DDA86027342AE87A /* LSSHistogramView.m */; };
 		973EBD09181E33462B967E6FA51CD76B /* Pods-LSSCharts_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9D0EF32E31D0C8329886F4843530FE8 /* Pods-LSSCharts_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		978F448E1D590D30753161A32E1230C0 /* LSSChartsLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE499295A27835900B0501BC6EEF0649 /* LSSChartsLineView.m */; };
 		98EDC4C05864904680A4EFC296D664B0 /* UINavigationController+Autorotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 140070814EC00345213BD3BC97D9BA94 /* UINavigationController+Autorotate.m */; };
@@ -85,13 +81,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016E4BA0663A2E2679F05A0EFE8501BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		016E4BA0663A2E2679F05A0EFE8501BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0195AB89C2E1C33854395534E144C7F9 /* LSSBezierView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSBezierView.h; path = LSSCharts/Classes/LSSCharts/LSSBezierView.h; sourceTree = "<group>"; };
 		08F25AFD9965388C80DDD3F716B85A24 /* LSSCharts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSSCharts.debug.xcconfig; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		0F8E828CE4ABE7B4D8FD07C7770FB156 /* LSSCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSSCharts-prefix.pch"; sourceTree = "<group>"; };
 		140070814EC00345213BD3BC97D9BA94 /* UINavigationController+Autorotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+Autorotate.m"; path = "LSSCharts/Classes/LSSCharts/UINavigationController+Autorotate.m"; sourceTree = "<group>"; };
-		1824247044BE698F7B14402000E7A5D4 /* Pods_LSSCharts_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LSSCharts_Tests.framework; path = "Pods-LSSCharts_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1824247044BE698F7B14402000E7A5D4 /* Pods_LSSCharts_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSSCharts_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
@@ -99,7 +95,6 @@
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		294BD8F03E5C3E4FA0BC8A88D54CADC0 /* Pods-LSSCharts_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSSCharts_Example-frameworks.sh"; sourceTree = "<group>"; };
 		296311900EFD43BAD7AC17EA9E306102 /* LSSChartsConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSChartsConfig.h; path = LSSCharts/Classes/LSSCharts/LSSChartsConfig.h; sourceTree = "<group>"; };
-		3564D2C5746685CCC7F5DF62689C06C5 /* LSSHistogramView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSHistogramView.h; path = LSSCharts/Classes/LSSCharts/LSSHistogramView.h; sourceTree = "<group>"; };
 		38BAE4E2A9CD7E99E8A8D87AFB76DD0A /* Pods-LSSCharts_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSSCharts_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A232BD4C5EFF26E16CF9079C9F2DB50 /* UIImage+Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utilities.m"; path = "LSSCharts/Classes/LSSCharts/UIImage+Utilities.m"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
@@ -109,35 +104,33 @@
 		521E812C1D7FD0BA4D254937188A6A0E /* Pods-LSSCharts_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSSCharts_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		531AB38EA0162D27A42FB0CF9AF5CEA1 /* LSSCharts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LSSCharts-Info.plist"; sourceTree = "<group>"; };
 		542CB7928F2C4F5624CDA1E4AD62495C /* Pods-LSSCharts_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSSCharts_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5531744A7790D7B4EA775B5B1DFAF289 /* LSSCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LSSCharts.framework; path = LSSCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5531744A7790D7B4EA775B5B1DFAF289 /* LSSCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LSSCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A5214143FBEC440D4B4F3B91BCB7C3 /* LSSChartsConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSChartsConfig.m; path = LSSCharts/Classes/LSSCharts/LSSChartsConfig.m; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60259CC10E2E367EDD6DAF109B1210F9 /* Pods-LSSCharts_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LSSCharts_Example-dummy.m"; sourceTree = "<group>"; };
 		64C1873A48AF11F0E6BFCF294A9381B3 /* UIImage+Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Utilities.h"; path = "LSSCharts/Classes/LSSCharts/UIImage+Utilities.h"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		67A54C6ECA271AD1D1B2817198862CD5 /* LSSLineView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSLineView.m; path = LSSCharts/Classes/LSSCharts/LSSLineView.m; sourceTree = "<group>"; };
 		6853152F7E7B450341782CC36E9D63E1 /* LSSChartsBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSChartsBaseView.m; path = LSSCharts/Classes/LSSCharts/LSSChartsBaseView.m; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		6BA16E06C5560D255658A0AFDE527DE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6BA16E06C5560D255658A0AFDE527DE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6CCB7562228A08CCBCE27D64F74004F6 /* LSSCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSSCharts-dummy.m"; sourceTree = "<group>"; };
-		6E3292F35E77405054A78F41CB4021B8 /* LSSLineView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSLineView.h; path = LSSCharts/Classes/LSSCharts/LSSLineView.h; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		76C8624061369646F21705F6D09CC73D /* Pods_LSSCharts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LSSCharts_Example.framework; path = "Pods-LSSCharts_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C8624061369646F21705F6D09CC73D /* Pods_LSSCharts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSSCharts_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC457F85A6C70EBCABE36E84A423B8F /* Pods-LSSCharts_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSSCharts_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		80C711B72DB7FE3DCF7E3426D29822B1 /* TabButtonView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TabButtonView.h; path = LSSCharts/Classes/LSSCharts/TabButtonView.h; sourceTree = "<group>"; };
 		84532779C8309D5D84C992C180F71D9F /* LSSChartsBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSSChartsBaseView.h; path = LSSCharts/Classes/LSSCharts/LSSChartsBaseView.h; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		8C1AFF8E88770654D4A6400E60EF7180 /* LSSCharts.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LSSCharts.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8C1AFF8E88770654D4A6400E60EF7180 /* LSSCharts.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LSSCharts.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		8EBB126E8FF4760C701EFEB2316CD9FC /* LSSDataModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSDataModel.m; path = LSSCharts/Classes/LSSCharts/LSSDataModel.m; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9D0EF32E31D0C8329886F4843530FE8 /* Pods-LSSCharts_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LSSCharts_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AD198380BB4980D249F839CB26AF58F5 /* LSSCharts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LSSCharts.modulemap; sourceTree = "<group>"; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
@@ -151,7 +144,6 @@
 		CF4BAC123A1A3212DF6E8E7344BDAE76 /* Pods-LSSCharts_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSSCharts_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D0E2498E16ED7EA48DEFBD9FA3524C0C /* Pods-LSSCharts_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSSCharts_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D3676C65BE470ED8DDA86027342AE87A /* LSSHistogramView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSSHistogramView.m; path = LSSCharts/Classes/LSSCharts/LSSHistogramView.m; sourceTree = "<group>"; };
 		D37572C97AC2C77F7B6BD6626E037622 /* UINavigationController+Autorotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+Autorotate.h"; path = "LSSCharts/Classes/LSSCharts/UINavigationController+Autorotate.h"; sourceTree = "<group>"; };
 		D417A58C3B94F0B33EBF600BFD3A77D9 /* LSSCharts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSSCharts.release.xcconfig; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -220,10 +212,6 @@
 				EE499295A27835900B0501BC6EEF0649 /* LSSChartsLineView.m */,
 				B1AF035395E4BCEB108B10A030213DD6 /* LSSDataModel.h */,
 				8EBB126E8FF4760C701EFEB2316CD9FC /* LSSDataModel.m */,
-				3564D2C5746685CCC7F5DF62689C06C5 /* LSSHistogramView.h */,
-				D3676C65BE470ED8DDA86027342AE87A /* LSSHistogramView.m */,
-				6E3292F35E77405054A78F41CB4021B8 /* LSSLineView.h */,
-				67A54C6ECA271AD1D1B2817198862CD5 /* LSSLineView.m */,
 				80C711B72DB7FE3DCF7E3426D29822B1 /* TabButtonView.h */,
 				B819884338E956032BA5FB4330A3E6A7 /* TabButtonView.m */,
 				64C1873A48AF11F0E6BFCF294A9381B3 /* UIImage+Utilities.h */,
@@ -374,7 +362,6 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -455,8 +442,6 @@
 				BDFF48E3B605E5EED7E0EBF726643706 /* LSSChartsConfig.h in Headers */,
 				33F717E977637B2B6C7B91DC8B42A9BB /* LSSChartsLineView.h in Headers */,
 				8BDE91F85D13E86E74E16C9B816DA5DE /* LSSDataModel.h in Headers */,
-				7C8FFFACDCFFA603D35B0004BA12F427 /* LSSHistogramView.h in Headers */,
-				43D79CAAB872EB32810765D0912E6D4C /* LSSLineView.h in Headers */,
 				2BB4F3D6A62DF1201D4C279A1BB3BD73 /* TabButtonView.h in Headers */,
 				1C94AD85A9D594F7FAAC6ABF58BBBFF2 /* UIImage+Utilities.h in Headers */,
 				7945679BA234CAB7EBF465F14CB73B1E /* UINavigationController+Autorotate.h in Headers */,
@@ -637,8 +622,6 @@
 				AC4C5BBB3407A46B264975833F65DA0E /* LSSChartsConfig.m in Sources */,
 				978F448E1D590D30753161A32E1230C0 /* LSSChartsLineView.m in Sources */,
 				A04DFB2D2233FEBD179C510849B80C9A /* LSSDataModel.m in Sources */,
-				93A94A72724DE7FC65801DC9AB116FB2 /* LSSHistogramView.m in Sources */,
-				770FFA0B4F5F3AE183ED3BCA314DB9B4 /* LSSLineView.m in Sources */,
 				20F145B29F009347E3A5A7C0F90FDEB8 /* TabButtonView.m in Sources */,
 				9A95B24A7BCF6767A8F0B2727C45A292 /* UIImage+Utilities.m in Sources */,
 				98EDC4C05864904680A4EFC296D664B0 /* UINavigationController+Autorotate.m in Sources */,
@@ -935,8 +918,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
