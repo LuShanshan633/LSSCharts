@@ -41,7 +41,7 @@
 		36E83180E8CA3D1129D33F4A /* Pods-LSSCharts_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSCharts_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LSSCharts_Tests/Pods-LSSCharts_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4545F43BC3B51A830F3330F7 /* Pods_LSSCharts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSSCharts_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3449401AB0F6435793AE70 /* Pods-LSSCharts_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSSCharts_Example.debug.xcconfig"; path = "Target Support Files/Pods-LSSCharts_Example/Pods-LSSCharts_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* LSSCharts_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSSCharts_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* LSSCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSSCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -110,7 +110,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* LSSCharts_Example.app */,
+				6003F58A195388D20070C39A /* LSSCharts.app */,
 				6003F5AE195388D20070C39A /* LSSCharts_Tests.xctest */,
 			);
 			name = Products;
@@ -215,7 +215,7 @@
 			);
 			name = LSSCharts_Example;
 			productName = LSSCharts;
-			productReference = 6003F58A195388D20070C39A /* LSSCharts_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* LSSCharts.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* LSSCharts_Tests */ = {
@@ -522,7 +522,7 @@
 				INFOPLIST_FILE = "LSSCharts/LSSCharts-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LSSCharts;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -539,7 +539,7 @@
 				INFOPLIST_FILE = "LSSCharts/LSSCharts-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LSSCharts;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

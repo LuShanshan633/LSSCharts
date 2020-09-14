@@ -9,7 +9,7 @@
 #import "LSSViewController.h"
 #import <LSSCharts/LSSCharts.h>
 
-@interface LSSViewController ()<LSSChartsViewDelegate,TabButtonViewDelegate>
+@interface LSSViewController ()<LSSChartsViewDelegate>
 {
     LSSLineView * bezierView;
     TabButtonView * tabView;
